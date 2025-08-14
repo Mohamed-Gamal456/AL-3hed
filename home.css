@@ -60,7 +60,10 @@ header {
 .logo img {
     height: 35px;
 }
-
+.logo:hover img{
+    transform: scale(1.1);
+    transition: transform 0.7s ease;
+}
 .nav-links {
     display: flex;
     gap: 20px;
@@ -442,4 +445,5 @@ footer p {
   .trust-item { min-width: 130px; }
   .why-choose { padding: 28px 5%; }
 }
+
 
