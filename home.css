@@ -8,9 +8,9 @@
 /* =====================================================head======================================================== */
 .hero {
     background: url('image/background.jpg') no-repeat center center/cover;
-    border-radius: 10px;
+    border-radius: 15px;
     height: 65vh; 
-    margin: 2.5px 3.5px;
+    margin: 8px;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -26,20 +26,12 @@
     color: white;
     z-index: 2;
 }
-
 .hero-content h1 {
     font-size: 2.5rem;
-    margin-bottom: 10px;
+    margin: 10px 0px 50px 0px ;
     font-weight: bold;
     text-shadow: 0 2px 6px rgba(0,0,0,0.4);
 }
-
-.hero-content p {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
-    text-shadow: 0 1px 4px rgba(0,0,0,0.3);
-}
-
 .cta-btn {
     background-color: #1b4d3e;
     color: white;
@@ -398,19 +390,17 @@ footer p {
         justify-content: space-between;
     }
     .hero {
-        height: 44vh;
-        margin: 2px 3px;
+        height: 39vh;
+        margin: 4px ;
         box-shadow: #0b2a22 0px 0px 45px;
     }
     .hero-content h1 {
-        font-size: 1.6rem;
-    }
-    .hero-content p {
-        font-size: 1rem;
+        font-size: 1.17rem;
+        margin: 10px 0px 20px 0px;
     }
     .cta-btn {
         font-size: 1rem;
-        padding: 4px;
+        padding: 7px;
     }
     .nav-links {
         order: 3;
