@@ -19,7 +19,10 @@ header {
 .logo img {
     height: 35px;
 }
-
+.logo:hover img{
+    transform: scale(1.1);
+    transition: transform 0.7s ease;
+}
 .nav-links {
     display: flex;
     gap: 20px;
@@ -272,4 +275,5 @@ footer p {
         align-items: center;
     }
 }
+
 }
