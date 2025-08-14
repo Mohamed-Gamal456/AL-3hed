@@ -390,7 +390,7 @@ footer p {
         justify-content: space-between;
     }
     .hero {
-        height: 39vh;
+        height: 35vh;
         margin: 4px ;
         box-shadow: #0b2a22 0px 0px 45px;
     }
@@ -442,3 +442,4 @@ footer p {
   .trust-item { min-width: 130px; }
   .why-choose { padding: 28px 5%; }
 }
+
