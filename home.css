@@ -7,7 +7,7 @@
 }
 /* =====================================================head======================================================== */
 .hero {
-    background: url('image/background.jpg') no-repeat center center/cover;
+    background: url('image/backgroound1.jpg') no-repeat center center/cover;
     border-radius: 15px;
     height: 65vh; 
     margin: 8px;
@@ -445,5 +445,6 @@ footer p {
   .trust-item { min-width: 130px; }
   .why-choose { padding: 28px 5%; }
 }
+
 
 
