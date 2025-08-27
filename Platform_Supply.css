@@ -1,0 +1,315 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cairo', Arial, sans-serif;
+}
+:root {
+  /* ثابت */
+  --primary: #E62727;       /* CTA - الأحمر */
+  --secondary: #1E93AB;     /* التركواز */
+  --background: #F3F2EC;    /* خلفية فاتحة */
+  --surface: #DCDCDC;       /* كروت/بلوكات */
+  --text-dark: #222222;     /* نص أساسي */
+  --text-light: #ffffff;    /* نص فاتح */
+}
+body {
+    background-color: var(--background);
+}
+/* ===========================================head=============================================== */
+header {
+    position: relative; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 4%;
+    background-color: var(--secondary);
+    color: white;
+    flex-wrap: wrap;
+    z-index: 2;
+}
+.logo img {
+    height: 35px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav-links a:hover {
+    color:#1b4d3e;
+}
+
+.social-icons a {
+    color: rgb(254, 254, 254);
+    font-size: 18px;
+    margin-right: 15px;
+}
+.social-icons a:hover {
+    color: #1b4d3e;
+}
+.img-main{
+    width:99%;
+    margin: 20px 0.5% 100px 0.5%;
+    /* padding: 15px 15px; */
+    display: flex;
+    justify-content: center;
+    /* background-color:rgb(214, 212, 212) */
+}
+.img-main img{
+    object-fit: cover;
+    width: 99%;
+    height: 80vh;
+    border-radius: 3px;
+    box-shadow: #4c363e 0px 0px 10px;
+}
+/* ==================================== General Style ========================================== */
+section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+p {
+  font-size: 18px;
+  color: #555;
+  line-height: 1.6;
+}
+
+.cta-btn {
+  display: inline-block;
+  padding: 12px 25px;
+  background: #e63946;
+  color: #fff;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.cta-btn:hover {
+  background: #c71c30;
+}
+
+/* ========================================= About Section ============================================== */
+.about {
+  background: #f8f9fa;
+  border-radius: 15px;
+  max-width: 800px;
+  margin: 5% auto;
+}
+
+/* ====== Results Section ====== */
+.results-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+.result-card {
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+.result-card img {
+  width: 100%;
+  display: block;
+}
+.result-card:hover {
+  transform: translateY(-10px);
+}
+/* ======================================= Services Section ========================================== */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+.service-card {
+  background: linear-gradient(135deg, #e63946, #ff6b6b);
+  color: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  font-size: 18px;
+  font-weight: bold;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+.service-card:hover {
+  transform: scale(1.05);
+}
+
+/* =============================================== Why Us Section ======================================= */
+.why-us {
+  background: #f8f9fa;
+  border-radius: 15px;
+  max-width: 900px;
+  margin:5% auto;
+}
+.why-us ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0 0;
+}
+.why-us li {
+  font-size: 18px;
+  padding: 10px;
+  margin: 5px 0;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  text-align: right;
+}
+
+/* ====================================== Final CTA Section ===================================== */
+.cta-final {
+  background: linear-gradient(135deg, #ff6b6b, #e63946);
+  color: #fff;
+  padding: 70px 20px;
+  border-radius: 15px;
+  margin: 8% auto;
+}
+.cta-final h1 {
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+.cta-final p {
+  font-size: 20px;
+  margin-bottom: 25px;
+  color: #fff;
+}
+/* =============================================footer================================================== */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 30px;
+    flex-wrap: wrap;
+    gap: 20px;
+    direction: rtl;
+    background: var(--surface);;
+    /* color: #111; */
+    border-top: 2px solid #ddd;
+}
+
+footer h1 {
+    color: #1b4d3e;
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+footer p {
+    margin-top: 15px;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: black;
+}
+
+.alahed {
+    flex: 1;
+    text-align: right;
+    padding: 0 10%;
+}
+
+.content-our {
+    flex: 1;
+    text-align: left;
+    padding: 0 10%;
+}
+
+.content-links {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.content-links a {
+    color: #0911f7;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.content-links a:hover {
+    color: #1b4d3e;
+    transform: translateX(-3px);
+}
+
+@media (max-width: 768px) {
+
+@media (max-width: 768px) {
+    header { /*--------------head----------------------*/
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 5px 3%;
+    }
+    .nav-links {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+        margin-top: 5px;
+        flex-wrap: wrap;
+    }
+
+    .logo {
+        order: 2;
+    }
+
+    .social-icons {
+        order: 1;
+    }
+    .img-main img{
+    width: 99%;
+    height:28vh;
+}
+    .package-details {  /*-----------package-details------------*/
+        padding: 15px;
+    }
+    .package-details h1 {
+        font-size: 24px;
+    }
+    .package-details ul li {
+        font-size: 19px;
+        padding: 12px 15px;
+    }
+    .other-packages {   /*-----------other-Packages------------*/
+        margin: 60px 0px 80px  0px;
+    }
+    .package-card {
+        font-size:larger;
+    }
+    .services-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+    footer {   /*--------footer----------------*/
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .alahed, .content-our {
+        text-align: center;
+        padding: 0;
+    }
+
+    .content-links {
+        align-items: center;
+    }
+}
+}
