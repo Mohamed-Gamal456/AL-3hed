@@ -411,7 +411,7 @@ header {
 .logos-track {
   display: flex;
   width: max-content;
-  animation: scrollRight 130s linear infinite;
+  animation: scrollRight 200s linear infinite;
 }
 
 .logos-track img {
@@ -435,7 +435,7 @@ header {
     margin: 0 20px; /* مسافة أقل */
   }
   .logos-track {
-    animation: scrollRight 90s linear infinite;
+    animation: scrollRight 180s linear infinite;
 }
  .partners {
   padding: 10%;
@@ -590,3 +590,4 @@ footer p {
   .trust-item { min-width: 130px; }
   .why-choose { padding: 28px 5%; }
 }
+
