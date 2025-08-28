@@ -33,12 +33,19 @@
 لأقسام خاصة (زي Offers – Testimonials).
 خلفيات البانرات أو الكروت المهمة.
 Hover effect على الأزرار أو الصور (خليها تبان حديثة). */
+/* =====================================================Fonts========================================================== */
+    /* font-family: 'Cairo', Arial, sans-serif; */
+    /* font-family: 'Noto Sans Arabic', sans-serif; */
+    /* font-family: 'IBM Plex Sans Arabic', sans-serif;  عرض و كويس*/
+    /* font-family: 'Baloo Bhaijaan 2', cursive;  عريض و منفوخ*/
+    /* font-family: 'Reem Kufi Fun', sans-serif;     فيه اشكال*/ 
+/* ====================================================General======================================================== */
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Cairo', Arial, sans-serif;
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
 }
 :root {
   /* ثابت */
@@ -86,14 +93,13 @@ body{
 .cta-btn {
     background-color: var(--primary);
     color: white;
-    padding: 12px 25px;
-    border-radius: 25px;
+    padding: 10px 15px;
+    border-radius: 8px;
     font-size: 1.1rem;
     text-decoration: none;
     font-weight: bold;
     transition: 0.3s ease;
 }
-
 .cta-btn:hover {
     background-color: white;
     color: var(--primary);
@@ -107,6 +113,9 @@ header {
     color: white;
     flex-wrap: wrap;
     z-index: 2;
+    margin: 2px 1% ;
+    background: rgba(223, 220, 220, 0.5);
+    border-radius: 10px;
 }
 .logo img {
     height: 35px;
@@ -117,34 +126,32 @@ header {
 }
 .nav-links {
     display: flex;
-    gap: 20px;
+    gap: 35px;
 }
-
 .nav-links a {
     color: rgb(255, 255, 255);
     text-decoration: none;
-    font-size: 18px;
+    font-size: 20px;
 }
-
 .nav-links a:hover {
-    color:#1b4d3e;
+    color:#f80404;
 }
-
 .social-icons a {
     color: rgb(254, 254, 254);
     font-size: 18px;
     margin-right: 15px;
 }
 .social-icons a:hover {
-    color: #1b4d3e;
-}
+  color: red;
+  }
 /*=====================================================جمله افتتاحيه================================================*/
 .container-home {
+    margin: 5% 25%;
     padding: 30px 10%;
     color: rgb(13, 13, 13);
     text-align: center;
     background-color: #e4e5e5;
-    margin: 5% 25%;
+    
     border-radius: 8px;
 }
 .container-home h1 {
@@ -167,11 +174,30 @@ header {
     box-shadow:inset 0 0 20px rgb(255, 255, 255);
 }
 .container h2 {
-    grid-column: 1 / -1; 
-    text-align: center; 
-    font-size: 2rem; 
-    color: #fff; 
-    font-weight: bold;
+  margin: 0 auto;
+  grid-column: 1 / -1; 
+  text-align: center; 
+  font-size: 1.5rem; 
+  color: #fff; 
+  font-weight: bold;
+  line-height: 1.8;
+  background: rgba(255, 255, 255, 0.1); 
+  padding: 15px 20px;           
+  border-radius: 10px;         
+  box-shadow: 0 0 10px rgba(0,0,0,0.2); 
+}
+.container p {
+    grid-column: 1 / -1;         
+    text-align: center;          
+    font-size: 1.2rem;           
+    color: #f1f1f1;              
+    margin-bottom: 30px;         
+    font-weight: 500;            
+    line-height: 1.8;             
+    background: rgba(255, 255, 255, 0.1); 
+    padding: 10px 15px;           
+    border-radius: 10px;       
+    box-shadow: 0 0 10px rgba(0,0,0,0.2); 
 }
 .container a {
     background-color: #1b4d3e;   /* الخلفية تبقى جوه الكارد */
@@ -202,6 +228,10 @@ header {
 .why-us  h2 {
     color: #fff;
     font-size: 26px;
+    background: rgba(255, 255, 255, 0.1); 
+    padding: 8px 8px;           
+    border-radius: 10px;       
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
     margin-bottom: 40px;
 }
 .cards {
@@ -386,41 +416,41 @@ header {
   color: #e67e22;
   margin-bottom: 30px;
 }
-
-/*========================================السلايدر================================================= */
-/* شركاء النجاح */
- .partners {
+/*========================================شركاء النجاح ================================================= */
+.partners {
   text-align: center;
   margin: 5%;
   padding: 8%;
+  padding-top: 3% !important;
+  background: rgba(150, 150, 150, 0.08); 
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15),
+              inset 0 0 15px rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(6px); 
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
 .partners h2 {
-  font-size: 2rem;
-  margin-bottom: 45px;
+  font-size: 1.5rem;
+  margin-bottom: 75px;
   color: #e63946;
 }
-
 /* السلايدر */
 .logos-slider {
   overflow: hidden;
   position: relative;
   width: 100%;
 }
-
 .logos-track {
   display: flex;
   width: max-content;
-  animation: scrollRight 40s linear infinite;
+  animation: scrollRight 130s linear infinite;
 }
-
 .logos-track img {
   height: 80px;
   margin: 0 40px;
   filter: grayscale(100%);
   transition: filter 0.3s ease;
 }
-
 .logos-track img:hover {
   filter: grayscale(0%);
 }
@@ -429,81 +459,66 @@ header {
   0% { transform: translateX(0); }
   100% { transform: translateX(100%); }
 }
-@media (max-width: 768px) {
-  .logos-track img {
-    height: 50px; /* أصغر على الموبايل */
-    margin: 0 20px; /* مسافة أقل */
-  }
-  .logos-track {
-    animation: scrollRight 20s linear infinite;
-}
- .partners {
-  padding: 10%;
-  margin: 8% 1%;
-}
-}
-
-@media (min-width: 769px) {
-  .logos-track img {
-    height: 80px; /* على اللاب توب */
-    margin: 0 40px;
-  }
-} 
-
-
 /*==========================================footer============================================ */
-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding: 30px;
-    flex-wrap: wrap;
-    gap: 20px;
-    direction: rtl;
-    background: var(--surface);;
-    /* color: #111; */
-    border-top: 2px solid #ddd;
-}
-footer h1 {
-    color: #1b4d3e;
-    margin-bottom: 15px;
-    text-align: center;
-    font-size: 1.5rem;
-}
-footer p {
-    margin-top: 15px;
-    font-size: 1rem;
-    line-height: 1.6;
-    color: black;
-}
-.alahed {
-    flex: 1;
-    text-align: right;
-    padding: 0 10%;
-}
-.content-our {
-    flex: 1;
-    text-align: left;
-    padding: 0 10%;
-}
-.content-links {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    margin-top: 10px;
-}
-.content-links a {
-    color: #0911f7;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease, transform 0.2s ease;
-}
-.content-links a:hover {
-    color: #1b4d3e;
-    transform: translateX(-3px);
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; 
+  gap: 40px;
+  background: #1b1b1b;
+  color: #fff;
+  padding: 50px 8%;
+  text-align: center;
 }
 
+.footer h1, .footer h2 {
+  margin-bottom: 15px;
+  font-size: 22px;
+  color: #ffcc00;
+}
 
+.footer p {
+  margin: 10px 0;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.footer-logo {
+  margin-top: 15px;
+  padding: 5px;
+  max-width: 120px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(245, 197, 3, 0.5);
+}
+.footer .social-icons {
+  margin-top: 15px;
+}
+.footer .social-icons a {
+  margin: 0 8px;
+  font-size: 22px;
+  color: #fff;
+  transition: 0.3s;
+}
+
+.footer .social-icons a:hover {
+  color: #ffcc00;
+}
+
+.footer-left nav a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #ddd;
+  margin: 8px 0;
+  text-decoration: none;
+  transition: color 0.3s;
+  font-size: 16px;
+}
+
+.footer-left nav a:hover {
+  color: #ffcc00;
+}
 /*===============================================phone================================================ */  
 
 
@@ -518,6 +533,12 @@ footer p {
   .features { grid-template-columns: repeat(2, 1fr); gap: 16px; }
   .why-choose h2 { font-size: 1.6rem; }
 }
+@media (min-width: 769px) { /*-------- شركاء النجاح -------- */
+  .logos-track img {
+    height: 80px; /* على اللاب توب */
+    margin: 0 40px;
+  }
+}
 @media (min-width: 768px) {
     .cards {   /*-----------حلول متكامله-------------*/
         grid-template-columns: repeat(2, 1fr);
@@ -529,6 +550,7 @@ footer p {
     header {      /*--------------head----------------------*/
         flex-direction: row;
         justify-content: space-between;
+        padding: 5px 1.5% 15px 1.5%;
     }
     .hero {
         height: 35vh;
@@ -539,7 +561,7 @@ footer p {
       margin: 7% 1.5%;
   }
     .hero-content h1 {
-        font-size: 1.17rem;
+        font-size: 1rem;
         margin: 10px 0px 20px 0px;
     }
     .hero-content {
@@ -551,19 +573,26 @@ footer p {
         padding: 7px;
     }
     .nav-links {
+      display: flex;
         order: 3;
         width: 100%;
         justify-content: center;
         margin-top: 5px;
         flex-wrap: wrap;
+        gap: 15px;
     }
-
+    .nav-links a{
+      font-size: 13px;
+    }
     .logo {
         order: 1;
     }
-
+    .social-icons a {
+      font-size: 14px;
+      margin-right: 8px;
+    }
     .social-icons {
-        order: 2;
+     order: 2;
     }
     .container {
         display: grid;
@@ -571,19 +600,47 @@ footer p {
         gap: 2%;
         padding: 30px 4%;
     }
-    footer {  /*--------footer----------------*/
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        padding: 20px;
-    }
-    .alahed, .content-our {
-        text-align: center;
-        padding: 0;
-    }
-    .content-links {
-        align-items: center;
-    }
+    .container p {         
+    font-size: 1rem;          
+    line-height: 1.3;
+}
+.why-us {
+    padding: 40px 4%;
+}
+.why-us  h2 {
+    font-size: 20px;
+    padding: 10px 12px; 
+    margin-bottom: 30px;
+}
+  .logos-track img {   /*-------------------شركاء النجاح-----------------*/
+    height: 50px; /* أصغر على الموبايل */
+    margin: 0 20px; /* مسافة أقل */
+  }
+  .logos-track {
+    animation: scrollRight 90s linear infinite;
+}
+ .partners {
+  padding: 10%;
+  padding-bottom: 15% !important;
+  margin: 8% 1%;
+}
+.footer {   /*--------------footer---------------------*/
+    grid-template-columns: 1fr;   /* يخليهم تحت بعض */
+    text-align: center;           /* توسيط النصوص */
+  }
+
+  .footer p {
+    justify-content: center;
+  }
+
+  .footer-left nav a {
+    justify-content: center;
+  }
+
+  .footer .social-icons {
+    display: flex;
+    justify-content: center;
+  }
 }
 @media (max-width: 560px) {   /*-------- لماذا تختار العاهد------------*/
   .features { grid-template-columns: 1fr; }
@@ -591,4 +648,15 @@ footer p {
   .why-choose { padding: 28px 5%; }
 }
 
-
+/*================================================reveal============================== */
+/* الحالة الأولية لكل العناصر */
+.reveal {
+  opacity: 0;
+  transform: translateY(60px);
+  transition: all 1s ease;
+}
+/* الحالة بعد ما تظهر */
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
