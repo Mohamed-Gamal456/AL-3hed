@@ -3,9 +3,20 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Cairo', Arial, sans-serif;
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
 }
-
+:root {
+  /* ثابت */
+  --primary: #E62727;       /* CTA - الأحمر */
+  --secondary: #1E93AB;     /* التركواز */
+  --background: #F3F2EC;    /* خلفية فاتحة */
+  --surface: #DCDCDC;       /* كروت/بلوكات */
+  --text-dark: #222222;     /* نص أساسي */
+  --text-light: #ffffff;    /* نص فاتح */
+}
+body {
+    background-color: var(--background);
+}
 /* ==================== Header ==================== */
 header {
     position: relative; 
@@ -13,7 +24,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 15px 4%;
-    background-color: #c2185b;
+    background-color: var(--secondary);
     color: white;
     flex-wrap: wrap;
     z-index: 2;
@@ -41,7 +52,6 @@ header {
 .social-icons a:hover {
     color: #1b4d3e;
 }
-
 /* ==================== Hero Section ==================== */
 .hero {
     text-align: center;
@@ -72,7 +82,6 @@ header {
     background: #14543c;
     transform: scale(1.05);
 }
-
 /* ==================== Portfolio Section ==================== */
 .portfolio {
     text-align: center;
@@ -102,7 +111,6 @@ header {
     height: 250px;
     object-fit: cover;
 }
-
 /* ==================== Services Section ==================== */
 .services {
     text-align: center;
@@ -130,7 +138,6 @@ header {
 .service-card:hover {
     transform: translateY(-5px);
 }
-
 /* ==================== Value Section ==================== */
 .value {
     text-align: center;
@@ -188,7 +195,6 @@ header {
     color: #c2185b;
     display: block;
 }
-
 /* ==================== CTA Final Section ==================== */
 .cta-final {
     text-align: center;
@@ -219,58 +225,60 @@ header {
     background: #14543c;
     transform: scale(1.05);
 }
-
-/* ==================== Footer ==================== */
-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding: 30px;
-    flex-wrap: wrap;
-    gap: 20px;
-    direction: rtl;
-    background: #f5f5f5;
-    border-top: 2px solid #ddd;
+/*==========================================footer============================================ */
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; 
+  gap: 40px;
+  background: #1b1b1b;
+  color: #fff;
+  padding: 50px 8%;
+  text-align: center;
 }
-footer h1 {
-    color: #1b4d3e;
-    margin-bottom: 15px;
-    text-align: center;
-    font-size: 1.5rem;
+.footer h1, .footer h2 {
+  margin-bottom: 15px;
+  font-size: 22px;
+  color: #ffcc00;
 }
-footer p {
-    margin-top: 15px;
-    font-size: 1rem;
-    line-height: 1.6;
-    color: black;
+.footer p {
+  margin: 10px 0;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
-.alahed {
-    flex: 1;
-    text-align: right;
-    padding: 0 10%;
+.footer-logo {
+  margin-top: 15px;
+  padding: 5px;
+  max-width: 120px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(245, 197, 3, 0.5);
 }
-.content-our {
-    flex: 1;
-    text-align: left;
-    padding: 0 10%;
+.footer .social-icons {
+  margin-top: 15px;
 }
-.content-links {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    margin-top: 10px;
+.footer .social-icons a {
+  margin: 0 8px;
+  font-size: 22px;
+  color: #fff;
+  transition: 0.3s;
 }
-.content-links a {
-    color: #0911f7;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease, transform 0.2s ease;
+.footer .social-icons a:hover {
+  color: #ffcc00;
 }
-.content-links a:hover {
-    color: #1b4d3e;
-    transform: translateX(-3px);
+.footer-left nav a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #ddd;
+  margin: 8px 0;
+  text-decoration: none;
+  transition: color 0.3s;
+  font-size: 16px;
 }
-
+.footer-left nav a:hover {
+  color: #ffcc00;
+}
 /* ==================== Responsive ==================== */
 @media (max-width: 768px) {
     header {
@@ -291,7 +299,7 @@ footer p {
     .social-icons {
         order: 1;
     }
-    footer {
+    footer {  /*-------------------------footer-----------------*/
         flex-direction: column;
         align-items: center;
         text-align: center;
@@ -303,5 +311,34 @@ footer p {
     }
     .content-links {
         align-items: center;
-    }
+    }.footer {
+    grid-template-columns: 1fr;   /* يخليهم تحت بعض */
+    text-align: center;           /* توسيط النصوص */
+  }
+
+  .footer p {
+    justify-content: center;
+  }
+
+  .footer-left nav a {
+    justify-content: center;
+  }
+
+  .footer .social-icons {
+    display: flex;
+    justify-content: center;
+  }
+}
+/*=========================================reveal===========================*/
+/* الحالة الأولية لكل العناصر */
+.reveal {
+  opacity: 0;
+  transform: translateY(60px);
+  transition: all 1s ease;
+}
+
+/* الحالة بعد ما تظهر */
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
 }
