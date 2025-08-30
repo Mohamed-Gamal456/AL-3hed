@@ -65,7 +65,7 @@ body{
 }
 /* =====================================================head======================================================== */
 .hero {
-    background: url('image/backgroound1.jpg') no-repeat center center/cover;
+    background: url('image/أصفر وأسود حديث مكتب خلفية افتراضية لبرنامج Zoom (1600 x 900 بيكسل).png') no-repeat center center/cover;
     border-radius: 15px;
     height: 88vh; 
     margin: 4px;
@@ -660,3 +660,4 @@ header {
   opacity: 1;
   transform: translateY(0);
 }
+
