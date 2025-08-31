@@ -1,0 +1,364 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+}
+:root {
+  /* 🎨 أساسي */
+  --primary: #E62727;       /* CTA - الأحمر */
+  --secondary: #1E93AB;     /* التركواز */
+
+  /* 🎯 ألوان مساعدة */
+  --accent-gold: #F59E0B;  /* ذهبي */
+  --accent-purple: #9333EA;/* بنفسجي */
+
+  /* 🌐 خلفيات */
+  --background-light: #F9FAFB;
+  --background-dark: #0F172A;
+
+  /* ✍ النصوص */
+  --text-dark: #1E293B;
+  --text-light: #eff0f0;
+
+  /* 🌈 تدرجات */
+  --gradient-blue: linear-gradient(150deg, #06B6D9, #2874de);
+  --primary-light:linear-gradient(135deg, #c2185b, #6a1b9a);
+  --gradient-dark: linear-gradient(150deg, #06B6D9, #1E3A8A);
+}
+body {
+    background-color: var(--background-light);
+}
+/* ===========================================head=============================================== */
+header {
+    position: relative; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 4%;
+    background-color: var(--secondary);
+    color: white;
+    flex-wrap: wrap;
+    z-index: 2;
+}
+.logo img {
+    height: 35px;
+}
+.logo:hover img{
+    transform: scale(1.1);
+    transition: transform 0.7s ease;
+    filter: invert(1); /* يقلب الأبيض لأسود */
+}
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+.nav-links a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 18px;
+}
+.nav-links a:hover {
+    color:#1b4d3e;
+}
+.social-icons a {
+    color: rgb(254, 254, 254);
+    font-size: 18px;
+    margin-right: 15px;
+}
+.social-icons a:hover {
+    color: #1b4d3e;
+}
+.img-main{
+    width:99%;
+    margin: 20px 0.5% 100px 0.5%;
+    /* padding: 15px 15px; */
+    display: flex;
+    justify-content: center;
+    /* background-color:rgb(214, 212, 212) */
+}
+.img-main img{
+    object-fit: cover;
+    width: 99%;
+    height: 80vh;
+    border-radius: 3px;
+    box-shadow: #4c363e 0px 0px 10px;
+}
+/* ==================================== General Style ========================================== */
+section {
+  padding: 60px 20px;
+  text-align: center;
+}
+h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #222;
+  color: var(--secondary);
+}
+p {
+  font-size: 18px;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+.cta-btn {
+  display: inline-block;
+  padding: 12px 25px;
+  background: var(--primary);
+  color: #fff;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.cta-btn:hover {
+  background: #c71c30;
+}
+/* ========================================= About Section ============================================== */
+.about {
+  background: var(--text-light);
+  border-radius: 15px;
+  max-width: 800px;
+  margin: 5% auto;
+}
+/* ============================================== Results Section ====================================== */
+.results-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  border-radius: 10px;
+  background: var(--text-light);
+  margin: 60px 5%;
+  padding: 40px;
+}
+.result-card {
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+.result-card img {
+  width: 100%;
+  display: block;
+}
+.result-card:hover {
+  transform: translateY(-10px);
+}
+/* ======================================= Services Section ========================================== */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 20px;
+  margin: 40px 5%;
+  background: var(--text-light);
+  border-radius: 10px;
+  padding: 40px;
+}
+.service-card {
+  background: linear-gradient(135deg, #e63946, #ff6b6b);
+  color: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  font-size: 18px;
+  font-weight: bold;
+}
+.service-card {
+  background: linear-gradient(135deg, #e63946, #ff6b6b);
+  color: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  font-size: 18px;
+  font-weight: bold;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+.service-card:hover {
+  transform: scale(1.05);
+}
+/* =============================================== Why Us Section ======================================= */
+.why-us {
+  background: #f8f9fa;
+  border-radius: 15px;
+  max-width: 900px;
+  margin:5% auto;
+}
+.why-us ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0 0;
+}
+.why-us li {
+  font-size: 18px;
+  padding: 10px;
+  margin: 5px 0;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  text-align: right;
+}
+/* ====================================== Final CTA Section ===================================== */
+.cta-final {
+  background: var(--primary-light);
+  padding: 70px 20px;
+  border-radius: 15px;
+  margin: 8% ;
+}
+.cta-final h1 {
+  font-size: 32px;
+  margin-bottom: 15px;
+  color: var(--secondary);
+}
+.cta-final p {
+  font-size: 20px;
+  margin-bottom: 25px;
+  color: var(--text-light);
+}
+/*==========================================footer============================================ */
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; 
+  gap: 40px;
+  background: #1b1b1b;
+  padding: 50px 8%;
+  text-align: center;
+}
+.footer h1, .footer h2 {
+  margin-bottom: 15px;
+  font-size: 22px;
+  color: #ffcc00;
+}
+.footer p {
+  margin: 10px 0;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  color:var(--text-light);
+  gap: 8px;
+}
+.footer-logo {
+  margin-top: 15px;
+  padding: 5px;
+  max-width: 120px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(245, 197, 3, 0.5);
+}
+.footer .social-icons {
+  margin-top: 15px;
+}
+.footer .social-icons a {
+  margin: 0 8px;
+  font-size: 22px;
+  color: #fff;
+  transition: 0.3s;
+}
+.footer .social-icons a:hover {
+  color: #ffcc00;
+}
+.footer-left nav a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #ddd;
+  margin: 8px 0;
+  text-decoration: none;
+  transition: color 0.3s;
+  font-size: 16px;
+}
+.footer-left nav a:hover {
+  color: #ffcc00;
+}
+/*================================================mobile================================================*/
+@media (max-width: 768px) {
+    header { /*--------------head----------------------*/
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 5px 3%;
+    }
+    .nav-links {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+        margin-top: 5px;
+        flex-wrap: wrap;
+    }
+        .logo img {
+      height: 25px;
+    }
+    .social-icons a {
+      font-size: 14px;
+      margin-right: 8px;
+    }
+    .results-grid {
+      margin: 50px 1%;
+      padding: 20px;
+}
+.services-grid {
+  margin: 40px 1%;
+  padding: 20px;
+}
+.cta-final {
+  margin: 8% 1% ;
+}
+    .logo {
+        order: 2;
+    }
+    .social-icons {
+        order: 1;
+    }
+    .img-main img{
+    width: 99%;
+    height:28vh;
+}
+.about {
+  margin: 5% 1% ;
+}
+    .package-details {  /*-----------package-details------------*/
+        padding: 15px;
+    }
+    .package-details h1 {
+        font-size: 24px;
+    }
+    .package-details ul li {
+        font-size: 19px;
+        padding: 12px 15px;
+    }
+    .other-packages {   /*-----------other-Packages------------*/
+        margin: 60px 0px 80px  0px;
+    }
+    .package-card {
+        font-size:larger;
+    }
+    .services-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+  .footer {  /*------------------------footer----------------*/
+    grid-template-columns: 1fr;   /* يخليهم تحت بعض */
+    text-align: center;           /* توسيط النصوص */
+  }
+
+  .footer p {
+    justify-content: center;
+  }
+
+  .footer-left nav a {
+    justify-content: center;
+  }
+
+  .footer .social-icons {
+    display: flex;
+    justify-content: center;
+  }
+}
+/*======================================reveal===========================================*/
+/* الحالة الأولية لكل العناصر */
+.reveal {
+  opacity: 0;
+  transform: translateY(60px);
+  transition: all 1s ease;
+}
+/* الحالة بعد ما تظهر */
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
