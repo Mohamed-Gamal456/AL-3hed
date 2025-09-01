@@ -587,7 +587,7 @@ header {
       margin: 7% 1.5%;
   }
     .hero-content h1 {
-        font-size: 1.5rem;
+        font-size: 1.4rem;
         margin: 10px 0px 20px 0px;
     }
     .hero-content {
@@ -690,4 +690,5 @@ header {
   transform: translateY(0);
 
 }
+
 
