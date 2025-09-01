@@ -586,7 +586,7 @@ header {
       margin: 7% 1.5%;
   }
     .hero-content h1 {
-        font-size: 1.3rem;
+        font-size: 1.5rem;
         margin: 10px 0px 20px 0px;
     }
     .hero-content {
@@ -607,7 +607,7 @@ header {
         gap: 15px;
     }
     .nav-links a{
-      font-size: 13px;
+      font-size: 18px;
     }
     .logo {
         order: 1;
@@ -687,4 +687,5 @@ header {
 .reveal.active {
   opacity: 1;
   transform: translateY(0);
+
 }
