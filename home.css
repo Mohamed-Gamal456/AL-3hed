@@ -143,7 +143,7 @@ header {
     gap: 2%; 
     padding: 40px 11%;
     margin: 5% 1%;
-    /* border-radius: 1px; */
+    border-radius: 5px;
     background: var(--gradient-purple);
     /* box-shadow: inset 0 0 20px #1e3a8a; */
 }
@@ -690,5 +690,6 @@ header {
   transform: translateY(0);
 
 }
+
 
 
