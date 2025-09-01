@@ -16,9 +16,9 @@
                 <img src="image/font white.png" alt="شعار الموقع">
             </div>
             <nav class="nav-links">
-                <a href="#packages">الباقات</a>
-                <a href="#">من نحن</a>
-                <a href="#">المرجع</a>
+                <a href="index.html">العاهد</a>
+                <a href="feedback.html">رأيك يهمنا</a>
+                <a href="why_us.html">عن العاهد</a>
             </nav>
             <div class="social-icons">
               <a href="https://www.instagram.com/alahedmarketingagency?igsh=MTNpMTl0cXUwNDlvaw=="target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
@@ -30,7 +30,6 @@
             <h1>ضاعف مبيعاتك مع العاهد</h1>
             <a href="https://wa.me/201040769507" class="cta-btn" target="_blank" rel="noopener noreferrer">احجز استشارة مجانية</a>
         </div>
-        
     </section>
     <section class="container-home    reveal">
         <div class="container-home-text">
@@ -44,7 +43,7 @@
     <section class="container  reveal" id="packages">
         <h2>باقات وعروض!</h2>
         <p>يمكنك الدخول للباقات من خلال الضغط على الصورة</p>
-        <a href="part1z.html"><img src="image/GOLD.png" alt="الباقة الذهبية"></a>
+        <a href="part1z.html"><img src="image/gold.png" alt="الباقة الذهبية"></a>
         <a href="part2f.html"><img src="image/SILVER.png" alt="الباقة الفضية"></a>
         <a href="part3b.html"><img src="image/BRONZE.png" alt="الباقة البرونزية"></a>
         <a href="part4m.html"><img src="image/DAIMOND.png" alt="الباقة الماسية"></a>
@@ -154,7 +153,7 @@
 
     <div class="why-cta">
       <a href="https://wa.me/201040769507" target="_blank" rel="noopener noreferrer"class="primary-cta">احجز استشارة مجانية</a>
-      <a href="#" class="ghost-cta">شاهد أعمالنا</a>
+      <a href="why_us.html" class="ghost-cta">عن العاهد</a>
     </div>
   </div>
 </section>
@@ -202,11 +201,15 @@
     <h2>روابط</h2>
     <nav>
       <a href="index.html"><i class="fas fa-home"></i> الرئيسية</a>
-      <a href="#packages"><i class="fas fa-box"></i> الباقات</a>
-      <a href="#about"><i class="fas fa-users"></i> من نحن</a>
+      <a href="index.html#packages"><i class="fas fa-box"></i> الباقات</a>
+      <a href="why_us.html"><i class="fas fa-users"></i> عن العاهد</a>
     </nav>
   </div>
 </footer>
+<!-- /*======================= واتساب ===================*/ -->
+<a href="https://wa.me/201234567890" class="whatsapp" target="_blank">
+  <img src="image/WhatsApp.png" alt="واتساب">
+</a>
 <script>
   function revealOnScroll() {
     const reveals = document.querySelectorAll(".reveal");
@@ -226,7 +229,21 @@
 /*======================= لوجوهات الشركاء ===================*/
   const track = document.querySelector('.logos-track');
   track.innerHTML =  track.innerHTML.repeat(3); // تكرار اللوجوهات
+  /*========================whatsapp===========*/
+  let lastScrollTop = 0;
+  const whatsapp = document.querySelector(".whatsapp");
+
+  window.addEventListener("scroll", function() {
+    let currentScroll = window.scrollY;
+    if (currentScroll < lastScrollTop) {
+    // المستخدم طالع لفوق → اخفي الأيقونة
+      whatsapp.classList.add("hidden");
+    } else {
+    // المستخدم نازل لتحت → أظهر الأيقونة
+      whatsapp.classList.remove("hidden");
+    }
+      lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+    });
 </script>
 </body>
 </html>
-
