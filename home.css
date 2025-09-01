@@ -47,7 +47,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    box-shadow: #0b2a22 0px 0px 45px;
+/*     box-shadow: #0b2a22 0px 0px 45px; */
 }
 .hero-content {
     position: absolute;
@@ -709,3 +709,4 @@ header {
   opacity: 1;
   transform: translateY(0);
 }
+
