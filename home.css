@@ -112,8 +112,8 @@ header {
     color:var(--primary);
 }
 .social-icons a {
-    color: #FFFFFF;
-    font-size: 20px;
+    color: var(--secondary);
+    font-size: 18px;
     margin-right: 15px;
 }
 .social-icons a:hover {
@@ -143,7 +143,7 @@ header {
     gap: 2%; 
     padding: 40px 11%;
     margin: 5% 1%;
-    border-radius: 5px;
+    /* border-radius: 1px; */
     background: var(--gradient-purple);
     /* box-shadow: inset 0 0 20px #1e3a8a; */
 }
@@ -545,6 +545,26 @@ header {
 .footer-left nav a:hover {
   color: #ffcc00;
 }
+/*===============================================whatsapp============================================*/
+.whatsapp {
+  position: fixed;
+  bottom: 15px;
+  left: 15px;
+  z-index: 1000;
+  width: 40px;
+  height: 40px;
+}
+.whatsapp img {
+  width: 100%;
+  height: auto;
+  border-radius: 35%;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: opacity 0.3s ease;
+}
+.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
 /*===============================================phone================================================ */  
 
 
@@ -587,7 +607,7 @@ header {
       margin: 7% 1.5%;
   }
     .hero-content h1 {
-        font-size: 1.4rem;
+        font-size: 1.5rem;
         margin: 10px 0px 20px 0px;
     }
     .hero-content {
@@ -688,8 +708,4 @@ header {
 .reveal.active {
   opacity: 1;
   transform: translateY(0);
-
 }
-
-
-
