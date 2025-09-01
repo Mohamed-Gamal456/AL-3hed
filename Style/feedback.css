@@ -1,0 +1,241 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+}
+:root {
+  /* 🎨 أساسي */
+  --primary: #06B6D9;      /* تركواز */
+  --secondary: #1e9ec1;    /* تركواز أغمق */
+
+  /* 🎯 ألوان مساعدة */
+  --accent-silver: #c0c0c0;  /* ذهبي */
+  --accent-purple: #e5e7eb;/* بنفسجي */
+
+  /* 🌐 خلفيات */
+  --background-light: #FFFFFF ;
+  --background-dark: #0F172A;
+
+  /* ✍ النصوص */
+  --text-dark: #1E293B;
+  --text-light: #FFFFFF;
+
+  /* 🌈 تدرجات */
+  --gradient-blue: linear-gradient(150deg, #06B6D9, #2874de);
+  --gradient-purple: linear-gradient(150deg, #06B6D9, #9e4aec);
+  --gradient-dark: linear-gradient(150deg, #06B6D9, #1E3A8A);
+}
+body {
+    background-color: var(--background-light);
+}
+/* ===========================================head=============================================== */
+header {
+    position: relative; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 4%;
+    background-color: var(--primary);
+    color: white;
+    flex-wrap: wrap;
+    z-index: 2;
+}
+.logo img {
+    height: 35px;
+}
+.logo:hover img{
+    transform: scale(1.1);
+    transition: transform 0.7s ease;
+    filter: invert(1); /* يقلب الأبيض لأسود */
+}
+/* .logo img:hover {
+  
+} */
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+.nav-links a {
+    color: var(--text-light);
+    text-decoration: none;
+    font-size: 18px;
+}
+.nav-links a:hover {
+    color:var(--text-dark);
+}
+.social-icons a {
+    color: var(--text-light);
+    font-size: 18px;
+    margin-right: 15px;
+}
+.social-icons a:hover {
+    color: var(--text-dark);
+}
+.img-main{
+    width:99%;
+    margin: 20px 0.5% 100px 0.5%;
+    /* padding: 15px 15px; */
+    display: flex;
+    justify-content: center;
+    /* background-color:rgb(214, 212, 212) */
+}
+.img-main img{
+    object-fit: cover;
+    width: 99%;
+    height: 85vh;
+    border-radius: 3px;
+    box-shadow: #4c363e 0px 0px 10px;
+}
+/*============================================feedback========================================== */
+.feedback {
+  max-width: 600px;
+  margin: 80px auto;
+  padding: 20px;
+  background: #effbfe;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  direction: rtl ;
+}
+.feedback h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #06B6D9; /* تركواز */
+}
+.feedback form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.feedback label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.feedback input,
+.feedback select,
+.feedback textarea {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: 0.3s;
+}
+.feedback input:focus,
+.feedback select:focus,
+.feedback textarea:focus {
+  border-color: #06B6D9;
+  outline: none;
+  box-shadow: 0 0 5px rgba(6,182,217,0.5);
+}
+.feedback button {
+  background: #06B6D9;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.feedback button:hover {
+  background: #0E7490;
+  transform: scale(1.05);
+}
+/*==========================================footer============================================ */
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; 
+  gap: 40px;
+  background: #1b1b1b;
+  color: #fff;
+  padding: 50px 8%;
+  text-align: center;
+}
+.footer h1, .footer h2 {
+  margin-bottom: 15px;
+  font-size: 22px;
+  color: #ffcc00;
+}
+.footer p {
+  margin: 10px 0;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.footer-logo {
+  margin-top: 15px;
+  padding: 5px;
+  max-width: 120px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(245, 197, 3, 0.5);
+}
+.footer .social-icons {
+  margin-top: 15px;
+}
+.footer .social-icons a {
+  margin: 0 8px;
+  font-size: 22px;
+  color: #fff;
+  transition: 0.3s;
+}
+.footer .social-icons a:hover {
+  color: #ffcc00;
+}
+.footer-left nav a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #ddd;
+  margin: 8px 0;
+  text-decoration: none;
+  transition: color 0.3s;
+  font-size: 16px;
+}
+.footer-left nav a:hover {
+  color: #ffcc00;
+}
+@media (max-width: 768px) {
+    header { /*--------------head----------------------*/
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 5px 3%;
+    }
+    .nav-links {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+        margin-top: 5px;
+        flex-wrap: wrap;
+    }
+    .logo {
+        order: 2;
+    }
+    .logo img{
+        height: 25px;
+    }
+    .social-icons a {
+      font-size: 14px;
+      margin-right: 8px;
+    }
+    .social-icons {
+        order: 1;
+    }
+  .feedback {
+    margin: 80px 1.5%;
+}
+    .footer {
+    grid-template-columns: 1fr;   /* يخليهم تحت بعض */
+    text-align: center;           /* توسيط النصوص */
+  }
+  .footer p {
+    justify-content: center;
+  }
+  .footer-left nav a {
+    justify-content: center;
+  }
+  .footer .social-icons {
+    display: flex;
+    justify-content: center;
+  }
+}
