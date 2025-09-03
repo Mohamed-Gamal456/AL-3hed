@@ -30,12 +30,14 @@
   --text-light: #FFFFFF;
 
   /* 🌈 تدرجات */
-  --gradient-blue: linear-gradient(150deg, #06B6D9, #2874de);
+  --gradient-blue: linear-gradient(150deg, , #2874de);
   --gradient-purple: linear-gradient(150deg, #06B6D9, #9e4aec);
   --gradient-dark: linear-gradient(150deg, #06B6D9, #1E3A8A);
 }
-body{
-  background-color: var(--background-light);
+body {
+  background: linear-gradient(160deg, #c6e6eb, #daf3f7, #f8f9fa );
+  min-height: 100vh;
+  margin: 0;
 }
 /* =====================================================head======================================================== */
 .hero {
@@ -47,7 +49,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-/*     box-shadow: #0b2a22 0px 0px 45px; */
+    box-shadow: #6c6d6d 0px 0px 45px;
 }
 .hero-content {
     position: absolute;
@@ -60,23 +62,82 @@ body{
 }
 .hero-content h1 {
     font-size: 2.5rem;
-    margin: 10px 0px 50px 0px ;
+    margin: 10px 0px 40px 0px ;
     font-weight: bold;
     text-shadow:#163f35 0px 0px 30px;
 }
-.cta-btn {
-    background-color: var(--primary);
-    color: white;
-    padding: 10px 15px;
-    border-radius: 8px;
-    font-size: 1.1rem;
-    text-decoration: none;
-    font-weight: bold;
-    transition: 0.3s ease;
+/* From Uiverse.io by mrhyddenn */ 
+.btn {
+  position: relative;
+  padding: 10px 20px;
+  border-radius: 7px;
+  border: 2.5px solid rgb(61, 106, 255);
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2px;
+  background: var(--background-dark);
+  color: #fff;
+  overflow: hidden;
+  box-shadow: 0 0 0 0 transparent;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
 }
-.cta-btn:hover {
-    background-color: white;
-    color: var(--primary);
+
+.btn:hover {
+  background: rgb(61, 106, 255);
+  box-shadow: 0 0 30px 5px rgba(0, 142, 236, 0.815);
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+.btn:hover::before {
+  -webkit-animation: sh02 0.5s 0s linear;
+  -moz-animation: sh02 0.5s 0s linear;
+  animation: sh02 0.5s 0s linear;
+}
+
+.btn::before {
+  content: '';
+  display: block;
+  width: 0px;
+  height: 86%;
+  position: absolute;
+  top: 7%;
+  left: 0%;
+  opacity: 0;
+  background: #fff;
+  box-shadow: 0 0 50px 30px #fff;
+  -webkit-transform: skewX(-20deg);
+  -moz-transform: skewX(-20deg);
+  -ms-transform: skewX(-20deg);
+  -o-transform: skewX(-20deg);
+  transform: skewX(-20deg);
+}
+
+@keyframes sh02 {
+  from {
+    opacity: 0;
+    left: 0%;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    left: 100%;
+  }
+}
+
+.btn:active {
+  box-shadow: 0 0 0 0 transparent;
+  -webkit-transition: box-shadow 0.2s ease-in;
+  -moz-transition: box-shadow 0.2s ease-in;
+  transition: box-shadow 0.2s ease-in;
 }
 header {
     position: relative; 
@@ -119,23 +180,160 @@ header {
 .social-icons a:hover {
   color: blue ;
   }
-/*=====================================================جمله افتتاحيه================================================*/
-.container-home {
-    margin: 5% 25%;
-    padding: 30px 10%;
-    color: var(--text-light);
-    text-align: center;
-    background-color: var(--primary);
-    border-radius: 8px;
+  /*==========================================================loding=========================================*/
+ .l {
+  font-size: x-large;
+  color: black;
+  opacity: 0;
+  animation: pass 2s ease-in-out infinite;
+  animation-delay: 0.2s;
+  letter-spacing: 0.5em;
+  text-shadow: 2px 2px 3px #919191;
+}
+.o {
+  font-size: x-large;
+  color: black;
+  opacity: 0;
+  animation: pass 2s ease-in-out infinite;
+  animation-delay: 0.4s;
+  letter-spacing: 0.5em;
+  text-shadow: 2px 2px 3px #919191;
+}
+
+.a {
+  font-size: x-large;
+  color: black;
+  opacity: 0;
+  animation: pass 2s ease-in-out infinite;
+  animation-delay: 0.6s;
+  letter-spacing: 0.5em;
+  text-shadow: 2px 2px 3px #919191;
+}
+.d {
+  font-size: x-large;
+  color: black;
+  opacity: 0;
+  animation: pass 2s ease-in-out infinite;
+  animation-delay: 0.8s;
+  letter-spacing: 0.5em;
+  text-shadow: 2px 2px 3px #919191;
+}
+.i {
+  font-size: x-large;
+  color: black;
+  opacity: 0;
+  animation: pass 2s ease-in-out infinite;
+  animation-delay: 1s;
+  letter-spacing: 0.5em;
+  text-shadow: 2px 2px 3px #919191;
+}
+.n {
+  font-size: x-large;
+  color: black;
+  opacity: 0;
+  animation: pass 2s ease-in-out infinite;
+  animation-delay: 1.2s;
+  letter-spacing: 0.5em;
+  text-shadow: 2px 2px 3px #919191;
+}
+.g {
+  font-size: x-large;
+  color: black;
+  opacity: 0;
+  animation: pass 2s ease-in-out infinite;
+  animation-delay: 1.4s;
+  letter-spacing: 0.5em;
+  text-shadow: 2px 2px 3px #919191;
+}
+.d1 {
+  font-size: x-large;
+  color: black;
+  opacity: 0;
+  animation: pass1 2s ease-in-out infinite;
+  animation-delay: 1.6s;
+  letter-spacing: 0.5em;
+  text-shadow: 2px 2px 3px #919191;
+}
+.d2 {
+  font-size: x-large;
+  color: black;
+  opacity: 0;
+  animation: pass1 2s ease-in-out infinite;
+  animation-delay: 2s;
+  letter-spacing: 0.5em;
+  text-shadow: 2px 2px 3px #919191;
+}
+
+@keyframes pass {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes pass1 {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+  /*=====================================================جمله افتتاحيه================================================*/
+.card1 {
+  /* width: 190px;
+  height: 254px; */
+  margin: 40px auto;
+  text-align: center;
+  border-radius: 20px;
+  max-width: 1100px;
+  padding: 5px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+}
+.card__content {
+  background: var(--background-light);
+  border-radius: 17px;
+  padding:80px 20px;
+  width: 100%;
+  height: 100%;
+}    
+.card__content h1 {
+  font-size: 28px;
+  margin-bottom: 15px;
+  color: var(--primary);
+}
+.card__content p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: var(--secondary);
+}
+  /* .container-home {
+  margin: 3% 25% 5% 25%;
+  padding: 30px 10%;
+  color: var(--text-light);
+  text-align: center;
+  background-color: var(--primary);
+  border-radius: 8px;
 }
 .container-home h1 {
-    font-size: 28px;
-    margin-bottom: 15px;
+
 }
 .container-home p {
-    font-size: 18px;
-    line-height: 1.6;
-}
+
+} */
 /* ===================================================الباقات والعروض======================================================== */
  .container {
     display: grid;
@@ -143,6 +341,7 @@ header {
     gap: 2%; 
     padding: 40px 11%;
     margin: 5% 1%;
+    border-radius: 8px;
     /* border-radius: 1px; */
     background: var(--gradient-purple);
     /* box-shadow: inset 0 0 20px #1e3a8a; */
@@ -174,7 +373,7 @@ header {
     box-shadow: 0 0 10px rgba(0,0,0,0.2); 
 }
 .container a {
-    background-color: #1b4d3e;   /* الخلفية تبقى جوه الكارد */
+    background-color:var(--secondary);   /* الخلفية تبقى جوه الكارد */
     border-radius: 5px;
     box-shadow: inset 0 0 20px rgb(96 228 123);
     overflow: hidden; /* يمنع الصورة تطلع برا */
@@ -190,23 +389,102 @@ header {
 .container a:hover img {
     transform: scale(1.05); /* تكبير بسيط عند الهوفر */
 }
+/*=====================================================test======================================================== */
+/* From Uiverse.io by andrew-demchenk0 */ 
+.test{
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.pyramid-loader {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  display: block;
+  transform-style: preserve-3d;
+  transform: rotateX(-20deg);
+}
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  animation: spin 4s linear infinite;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
+.pyramid-loader .wrapper .side {
+  width: 70px;
+  height: 70px;
+/* you can choose any gradient or color you want */
+  /* background: radial-gradient( #2F2585 10%, #F028FD 70%, #2BDEAC 120%); */
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  transform-origin: center top;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+.pyramid-loader .wrapper .side1 {
+  transform: rotateZ(-30deg) rotateY(90deg);
+  background: conic-gradient( #2BDEAC, #F028FD, #D8CCE6, #2F2585);
+}
+
+.pyramid-loader .wrapper .side2 {
+  transform: rotateZ(30deg) rotateY(90deg);
+  background: conic-gradient( #2F2585, #D8CCE6, #F028FD, #2BDEAC);
+}
+
+.pyramid-loader .wrapper .side3 {
+  transform: rotateX(30deg);
+  background: conic-gradient( #2F2585, #D8CCE6, #F028FD, #2BDEAC);
+}
+
+.pyramid-loader .wrapper .side4 {
+  transform: rotateX(-30deg);
+  background: conic-gradient( #2BDEAC, #F028FD, #D8CCE6, #2F2585);
+}
+
+.pyramid-loader .wrapper .shadow {
+  width: 60px;
+  height: 60px;
+  background: #8B5AD5;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  transform: rotateX(90deg) translateZ(-40px);
+  filter: blur(12px);
+}
 /* ===================================================حلول متكامله====================================== */
 .why-us {
-    background: var(--gradient-blue);
-    padding: 40px 7%;
-    text-align: center;
-    /* box-shadow: inset 0 0 20px #1e3a8a; */
-    margin: 1%;
-    border-radius: 5px;
-    color: var(--text-light);
+  background: var(--gradient-dark);
+  padding: 40px 7% ;
+  text-align: center;
+  /* box-shadow: inset 0 0 20px #1e3a8a; */
+  margin: 1%;
+  border-radius: 5px;
+  color: var(--text-light);
 }
 .why-us  h2 {
-    font-size: 26px;
-    /* background: rgba(255, 255, 255, 0.1);  */
-    padding: 8px 8px;           
-    border-radius: 10px;       
-    box-shadow: 0 0 10px rgba(0,0,0,0.2);
-    margin-bottom: 40px;
+  font-size: 26px;
+  /* background: rgba(255, 255, 255, 0.1);  */
+  padding: 8px 8px;           
+  border-radius: 10px;       
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  margin-bottom: 40px;
 }
 .cards {
     display: grid;
@@ -448,7 +726,7 @@ header {
   margin: 5%;
   padding: 8%;
   padding-top: 3% !important;
-  background: rgba(150, 150, 150, 0.08); 
+  background: #0bacae; 
   border-radius: 15px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15),
               inset 0 0 15px rgba(255, 255, 255, 0.05);
@@ -458,7 +736,7 @@ header {
 .partners h2 {
   font-size: 1.5rem;
   margin-bottom: 75px;
-  color: #e63946;
+  color: var(--text-light);
 }
 /* السلايدر */
 .logos-slider {
@@ -469,7 +747,7 @@ header {
 .logos-track {
   display: flex;
   width: max-content;
-  animation: scrollRight 130s linear infinite;
+  animation: scrollRight 120s linear infinite;
 }
 .logos-track img {
   height: 80px;
@@ -484,6 +762,64 @@ header {
 @keyframes scrollRight {
   0% { transform: translateX(0); }
   100% { transform: translateX(100%); }
+}
+/*===============================From Uiverse.io by PriyanshuGupta28================================*/ 
+.loader {
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 8% auto;
+}
+.circle {
+  width: 20px;
+  height: 20px;
+  background-color: #8BC6EC;
+  background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+  border-radius: 50%;
+  margin-right: 1rem;
+  animation: pulse 1.2s ease-in-out infinite;
+}
+
+.circle:nth-child(2) {
+  animation-delay: 0.2s;
+  background-color: #4158D0;
+  background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+}
+
+.circle:nth-child(3) {
+  animation-delay: 0.4s;
+  background-color: #0093E9;
+  background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+}
+
+.circle:nth-child(4) {
+  animation-delay: 0.6s;
+  background-color: #8EC5FC;
+  background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+}
+
+.circle:nth-child(5) {
+  animation-delay: 0.8s;
+  background-color: #00DBDE;
+  background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.8);
+    opacity: 0.7;
+  }
+
+  50% {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(0.8);
+    opacity: 0.7;
+  }
 }
 /*==========================================footer============================================ */
 .footer {
@@ -603,16 +939,20 @@ header {
         margin: 4px ;
         box-shadow: #0b2a22 0px 0px 45px;
     }
-    .container-home {
+    .card1 {
       margin: 7% 1.5%;
   }
-    .hero-content h1 {
-        font-size: 1.4rem;
+    .card1 h1 {
+        font-size: 1.3rem;
         margin: 10px 0px 20px 0px;
     }
     .hero-content {
       top: 65%;
       left: 48%;
+    }
+    .hero-content h1 {
+     font-size: 1.3rem;
+     margin: 10px 0px 20px 0px ; 
     }
     .cta-btn {
         font-size: 1rem;
@@ -709,5 +1049,3 @@ header {
   opacity: 1;
   transform: translateY(0);
 }
-
-
