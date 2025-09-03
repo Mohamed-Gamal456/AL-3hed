@@ -23,11 +23,9 @@
   --gradient-dark: linear-gradient(150deg, #06B6D9, #1E3A8A);
 }
 body {
-  background: #f8f9fa;
-  color: #222;
-  line-height: 1.8;
-  direction: rtl;
-  background-color: var(--background-light);
+  background: linear-gradient(160deg, #e2f5f8, #e1f5f8, #f8f9fa );
+  min-height: 100vh;
+  margin: 0;
 }
 h1, h2 {
     text-align: center;
@@ -94,13 +92,106 @@ header {
     border-radius: 3px;
     box-shadow: #4c363e 0px 0px 10px;
 }
+/*=======================================WRAPPER============================================ */
+.loader {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 110px;
+  height: 90px;
+  margin: 80px auto;
+  perspective: 780px;
+}
+.text {
+  font-size: 20px;
+  font-weight: 700;
+  color: #767676;
+  z-index: 10;
+}
+
+.load-inner {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  border-radius: 50%;
+}
+
+.load-inner.load-one {
+  left: 0%;
+  top: 0%;
+  border-bottom: 3px solid #5c5edc;
+  animation: rotate1 1.15s linear infinite;
+}
+
+.load-inner.load-two {
+  right: 0%;
+  top: 0%;
+  border-right: 3px solid #9147ff;
+  animation: rotate2 1.15s 0.1s linear infinite;
+}
+
+.load-inner.load-three {
+  right: 0%;
+  bottom: 0%;
+  border-top: 3px solid #3b82f6;
+  animation: rotate3 1.15s 0.15s linear infinite;
+}
+
+@keyframes rotate1 {
+  0% {
+    transform: rotateX(45deg) rotateY(-45deg) rotateZ(0deg);
+  }
+  100% {
+    transform: rotateX(45deg) rotateY(-45deg) rotateZ(360deg);
+  }
+}
+@keyframes rotate2 {
+  0% {
+    transform: rotateX(45deg) rotateY(45deg) rotateZ(0deg);
+  }
+  100% {
+    transform: rotateX(45deg) rotateY(45deg) rotateZ(360deg);
+  }
+}
+@keyframes rotate3 {
+  0% {
+    transform: rotateX(-60deg) rotateY(0deg) rotateZ(0deg);
+  }
+  100% {
+    transform: rotateX(-60deg) rotateY(0deg) rotateZ(360deg);
+  }
+}
 /* ========================================= About Section ============================================== */
 .about {
+  margin: 40px auto;
   text-align: center;
-  border-radius: 15px;
-  max-width: 800px;
-  margin: 5% auto;
-  background: var(--text-light);
+  border-radius: 20px;
+  max-width: 1100px;
+  padding: 5px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+}
+.card__content {
+  background: var(--background-light);
+  border-radius: 17px;
+  padding:80px 20px;
+  width: 100%;
+  height: 100%;
+}    
+.about h1 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color:var(--secondary);
+}
+.about p {
+    font-size: 1.2rem;
+    margin-bottom: 45px;
+    color: var(--text-dark)
+}section {
+  padding: 60px 20px;
+  text-align: center;
 }
 /* ======================== كروت + جريد ================================== */
 .results-grid, .services-grid {
@@ -150,25 +241,74 @@ header {
 /* ======================================== CTA ================================================== */
 .cta-final {
     text-align: center;
-    background: var(--primary-light);
-    color: #fff;
+    background: rgba(223, 220, 220, 0.5);
+    color: var(--text-dark);
     padding: 80px 20px;
     border-radius: 20px;
+    border: #0F172A 3px solid;
 }
-.cta-btn {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 15px 30px;
-    background: #fff;
-    color: var(--accent-purple);
-    font-weight: bold;
-    border-radius: 50px;
-    text-decoration: none;
-    transition: 0.3s ease;
+.cta-final h1{
+    color:var(--secondary);
 }
-.cta-btn:hover {
-    background: #f1f1f1;
-    transform: scale(1.05);
+/* From Uiverse.io by gharsh11032000 */ 
+/*-------------------button-------------------*/
+button {
+ appearance: button;
+ background-color: #1899D6;
+ border: solid transparent;
+ border-radius: 16px;
+ border-width: 0 0 4px;
+ box-sizing: border-box;
+ color: #FFFFFF;
+ cursor: pointer;
+ display: inline-block;
+ font-size: 15px;
+ font-weight: 700;
+ letter-spacing: .8px;
+ line-height: 20px;
+ margin-top: 30px ;
+ outline: none;
+ overflow: visible;
+ padding: 13px 19px;
+ text-align: center;
+ text-transform: uppercase;
+ touch-action: manipulation;
+ transform: translateZ(0);
+ transition: filter .2s;
+ user-select: none;
+ -webkit-user-select: none;
+ vertical-align: middle;
+ white-space: nowrap;
+}
+
+button:after {
+ background-clip: padding-box;
+ background-color: #1CB0F6;
+ border: solid transparent;
+ border-radius: 16px;
+ border-width: 0 0 4px;
+ bottom: -4px;
+ content: "";
+ left: 0;
+ position: absolute;
+ right: 0;
+ top: 0;
+ z-index: -1;
+}
+button:main, button:focus {
+ user-select: auto;
+}
+button:hover:not(:disabled) {
+ filter: brightness(1.1);
+}
+button:disabled {
+ cursor: auto;
+}
+button:active:after {
+ border-width: 0 0 0px;
+}
+button:active {
+ padding-bottom: 10px;
 }
 /* ================================== Animation ===================================== */
 .fade-in {
@@ -180,6 +320,75 @@ header {
     opacity: 1;
     transform: translateY(0);
 }
+/*=============================================loding=========================================*/
+.loader-section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 25px auto;
+}
+.loader1 {
+  text-align: center;
+  position: relative;
+  display: flex;
+}
+
+.loader1 .ball {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.ball {
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 8px 5px, white 5%, black);
+  position: relative;
+  transform-origin: 50% -100px;
+}
+
+.ball:last-child {
+  animation: balance-right 1.2s infinite linear;
+}
+
+.ball:first-child {
+  animation: balance-left 1.2s infinite linear;
+}
+
+@keyframes balance-right {
+  0% {
+    transform: rotate(0deg);
+    animation-timing-function: linear;
+  }
+
+  50% {
+    transform: rotate(0deg);
+    animation-timing-function: ease-out;
+  }
+
+  75% {
+    transform: rotate(-30deg);
+    animation-timing-function: ease-in;
+  }
+}
+
+@keyframes balance-left {
+  0% {
+    transform: rotate(0deg);
+    animation-timing-function: ease-out;
+  }
+
+  25% {
+    transform: rotate(30deg);
+    animation-timing-function: ease-in;
+  }
+
+  50% {
+    transform: rotate(0deg);
+    animation-timing-function: linear;
+  }
+}
+
 /*==========================================footer============================================ */
 .footer {
   display: grid;
@@ -254,6 +463,9 @@ header {
         .logo img {
       height: 25px;
     }
+    .about{
+      margin: auto 1%;
+    }
     .social-icons a {
       font-size: 14px;
       margin-right: 8px;
@@ -280,7 +492,11 @@ header {
     }
     .package-card {
         font-size:larger;
-    }.footer {
+    }
+    .cta-final {
+      margin: 50px 1%;
+}
+    .footer {
     grid-template-columns: 1fr;   /* يخليهم تحت بعض */
     text-align: center;           /* توسيط النصوص */
   }
