@@ -724,8 +724,7 @@ header {
 .partners {
   text-align: center;
   margin: 5%;
-  padding: 8%;
-  padding-top: 3% !important;
+  padding: 35px 8% ;
   background: #0bacae; 
   border-radius: 15px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15),
@@ -733,10 +732,11 @@ header {
   backdrop-filter: blur(6px); 
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-.partners h2 {
+.h2 {
+  text-align: center;
   font-size: 1.5rem;
-  margin-bottom: 75px;
-  color: var(--text-light);
+  margin-bottom: 15px;
+  color: var(--primary);
 }
 /* السلايدر */
 .logos-slider {
@@ -769,7 +769,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 8% auto;
+  margin: 7% auto;
 }
 .circle {
   width: 20px;
@@ -993,6 +993,9 @@ header {
     font-size: 1rem;          
     line-height: 1.3;
 }
+.h2 {
+  font-size: 1rem;
+}
 .why-us {
     padding: 40px 4%;
 }
@@ -1009,8 +1012,6 @@ header {
     animation: scrollRight 90s linear infinite;
 }
  .partners {
-  padding: 10%;
-  padding-bottom: 15% !important;
   margin: 8% 1%;
 }
 .footer {   /*--------------footer---------------------*/
