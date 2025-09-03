@@ -27,7 +27,9 @@
   --gradient-dark: linear-gradient(150deg, #06B6D9, #1E3A8A);
 }
 body {
-    background-color: var(--background-light);
+  background: linear-gradient(160deg, #e2f5f8, #e1f5f8, #f8f9fa );
+  min-height: 100vh;
+  margin: 0;
 }
 /* ===========================================head=============================================== */
 header {
@@ -86,6 +88,36 @@ header {
     height: 85vh;
     border-radius: 3px;
     box-shadow: #4c363e 0px 0px 10px;
+}/*==============================================wrapper========================================= */
+@keyframes animate8345 {
+  0%,100% {
+    filter: hue-rotate(0deg);
+  }
+
+  50% {
+    filter: hue-rotate(360deg);
+  }
+}
+.loader-main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background:#040404;
+  width: 200px;
+  margin: auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px #464747;
+  animation: animate8345 9s linear infinite;
+}
+.loader1 {
+  color: rgb(0, 0, 0);
+  background: linear-gradient(to right, #2d60ec, #3ccfda);
+  font-size: 30px;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  animation: animate8345 9s linear infinite;
+  font-weight: bold;
 }
 /* =========================================package-details======================================== */
 .package-details {
@@ -96,11 +128,6 @@ header {
     margin: 30px auto;
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     text-align: center;
-}
-.package-details:hover{
-    transform: scale(1.1);
-    transition: transform 0.7s ease;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
     border: #090909 2px solid;
 }
 .package-details h1 {
@@ -133,19 +160,126 @@ header {
     font-weight: bold;
     margin-left: 8px;
 }
-.cta-btn {
-    display: inline-block;
-    background: var(--accent-crown);
-    color: white;
-    padding: 12px 25px;
-    border-radius: 8px;
-    text-decoration: none;
-    font-size: 16px;
-    transition: background 0.3s ease;
+/*==================================== From Uiverse.io by 00Kubi =============================*/ 
+.loader {
+  width: 40px;
+  height: 40px;
+  margin: 0px 1px 0px 1px;
+  position: relative;
+
 }
-.cta-btn:hover {
-    background: var(--accent-purple);
-    color: var(--text-dark);
+
+.loader:before {
+  content: '';
+  width: 48px;
+  height: 5px;
+  background: #ed7fef;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  border-radius: 50%;
+  animation: shadow324 0.5s linear infinite;
+}
+.loader:after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  background: #e201e6;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  animation: jump7456 0.5s linear infinite;
+}
+@keyframes jump7456 {
+  15% {
+    border-bottom-right-radius: 50%;
+  }
+
+  25% {
+    transform: translateY(9px) rotate(22.5deg);
+  }
+
+  50% {
+    transform: translateY(18px) scale(1, .9) rotate(45deg);
+    border-bottom-right-radius: 40px;
+  }
+
+  75% {
+    transform: translateY(9px) rotate(67.5deg);
+  }
+
+  100% {
+    transform: translateY(0) rotate(90deg);
+  }
+}
+@keyframes shadow324 {
+
+  0%,
+    100% {
+    transform: scale(1, 1);
+  }
+
+  50% {
+    transform: scale(1.2, 1);
+  }
+}
+/* From Uiverse.io by gharsh11032000 */ 
+.div54{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+}
+.button {
+  position: relative;
+  width: 120px;
+  height: 40px;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  color: white;
+  flex-direction: column;
+  justify-content: center;
+  border: none;
+  padding: 12px;
+  gap: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.button::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  left: -4px;
+  top: -1px;
+  margin: auto;
+  width: 128px;
+  height: 48px;
+  border-radius: 10px;
+  background: linear-gradient(-45deg, #e81cff 0%, #40c9ff 100% );
+  z-index: -10;
+  pointer-events: none;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.button::after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(-45deg, #fc00ff 0%, #00dbde 100% );
+  transform: translate3d(0, 0, 0) scale(0.95);
+  filter: blur(20px);
+}
+.button:hover::after {
+  filter: blur(30px);
+}
+.button:hover::before {
+  transform: rotate(-180deg);
+}
+.button:active::before {
+  scale: 0.7;
 }
 /* =========================================other-packages======================================== */ 
 .other-packages {
