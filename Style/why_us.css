@@ -27,8 +27,10 @@
   --gradient-purple: linear-gradient(150deg, #06B6D9, #9e4aec);
   --gradient-dark: linear-gradient(to bottom, var(--primary), #e0f7fa);
 }
-body{
-  background-color: var(--background-light);
+body {
+  background: linear-gradient(160deg, #e2f5f8, #e1f5f8, #f8f9fa );
+  min-height: 100vh;
+  margin: 0;
 }
 /*===========================================head==================================*/
 header {
@@ -86,6 +88,118 @@ header {
     box-shadow: #4c363e 0px 0px 10px;
 }
 /*================================================= العنوان الرئيسي================================ */
+ /*==========================================================loding=========================================*/
+ .l {
+  font-size: x-large;
+  color: black;
+  opacity: 0;
+  animation: pass 2s ease-in-out infinite;
+  animation-delay: 0.2s;
+  letter-spacing: 0.5em;
+  text-shadow: 2px 2px 3px #919191;
+}
+.o {
+  font-size: x-large;
+  color: black;
+  opacity: 0;
+  animation: pass 2s ease-in-out infinite;
+  animation-delay: 0.4s;
+  letter-spacing: 0.5em;
+  text-shadow: 2px 2px 3px #919191;
+}
+
+.a {
+  font-size: x-large;
+  color: black;
+  opacity: 0;
+  animation: pass 2s ease-in-out infinite;
+  animation-delay: 0.6s;
+  letter-spacing: 0.5em;
+  text-shadow: 2px 2px 3px #919191;
+}
+.d {
+  font-size: x-large;
+  color: black;
+  opacity: 0;
+  animation: pass 2s ease-in-out infinite;
+  animation-delay: 0.8s;
+  letter-spacing: 0.5em;
+  text-shadow: 2px 2px 3px #919191;
+}
+.i {
+  font-size: x-large;
+  color: black;
+  opacity: 0;
+  animation: pass 2s ease-in-out infinite;
+  animation-delay: 1s;
+  letter-spacing: 0.5em;
+  text-shadow: 2px 2px 3px #919191;
+}
+.n {
+  font-size: x-large;
+  color: black;
+  opacity: 0;
+  animation: pass 2s ease-in-out infinite;
+  animation-delay: 1.2s;
+  letter-spacing: 0.5em;
+  text-shadow: 2px 2px 3px #919191;
+}
+.g {
+  font-size: x-large;
+  color: black;
+  opacity: 0;
+  animation: pass 2s ease-in-out infinite;
+  animation-delay: 1.4s;
+  letter-spacing: 0.5em;
+  text-shadow: 2px 2px 3px #919191;
+}
+.d1 {
+  font-size: x-large;
+  color: black;
+  opacity: 0;
+  animation: pass1 2s ease-in-out infinite;
+  animation-delay: 1.6s;
+  letter-spacing: 0.5em;
+  text-shadow: 2px 2px 3px #919191;
+}
+.d2 {
+  font-size: x-large;
+  color: black;
+  opacity: 0;
+  animation: pass1 2s ease-in-out infinite;
+  animation-delay: 2s;
+  letter-spacing: 0.5em;
+  text-shadow: 2px 2px 3px #919191;
+}
+
+@keyframes pass {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes pass1 {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+/*---------------------------title------------------------ */
 .title {
   text-align: center;
   padding: 60px 20px;
@@ -94,7 +208,7 @@ header {
 }
 .title h1 {
   font-size: 2.5rem;
-  margin-bottom: 15px;
+  margin: 20px;
   font-weight: 700;
   color:var(--background-light);
 }
@@ -168,35 +282,98 @@ section h2::after {
   transform: translateY(-8px);
   box-shadow: 0 10px 25px rgba(0,0,0,0.15);
 }
+/*========================loder====================================*/
+.loader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 100%;
+  margin-bottom: 30px;
+}
 
-/*===================================================CTA========================================= */
-.cta {
-  text-align: center;
-  padding: 80px 20px;
-  background: var(--gradient-purple);
-  color: var(--light);
-  border-radius: 20px;
-  margin: 40px 9%;
-}
-.cta h2 {
-  font-size: 2rem;
-  margin-bottom: 20px;
-  color: var(--text-light);
-}
-.cta a {
+.dot {
   display: inline-block;
-  background: var(--accent-gold);
-  color: var(--background-dark);
-  padding: 12px 25px;
-  border-radius: 30px;
-  font-size: 1.1rem;
-  text-decoration: none;
-  font-weight: bold;
-  transition: background 0.3s, transform 0.3s;
+  width: 10px;
+  height: 10px;
+  margin-right: 6px;
+  border-radius: 50%;
+  -webkit-animation: dot-pulse2 1.5s ease-in-out infinite;
+  animation: dot-pulse2 1.5s ease-in-out infinite;
 }
-.cta a:hover {
-  background: #d97706;
-  transform: scale(1.05);
+
+.dot-1 {
+  background-color: #4285f4;
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+}
+
+.dot-2 {
+  background-color: #34a853;
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+}
+
+.dot-3 {
+  background-color: #fbbc05;
+  -webkit-animation-delay: 0.6s;
+  animation-delay: 0.6s;
+}
+
+.dot-4 {
+  background-color: #ea4335;
+  -webkit-animation-delay: 0.9s;
+  animation-delay: 0.9s;
+}
+
+.dot-5 {
+  background-color: #4285f4;
+  -webkit-animation-delay: 1.2s;
+  animation-delay: 1.2s;
+}
+
+/* Variasi baru */
+.dot-6 {
+  background-color: #0f9d58;
+  -webkit-animation-delay: 1.5s;
+  animation-delay: 1.5s;
+}
+
+.dot-7 {
+  background-color: #673ab7;
+  -webkit-animation-delay: 1.8s;
+  animation-delay: 1.8s;
+}
+
+.dot-8 {
+  background-color: #ff5722;
+  -webkit-animation-delay: 2.1s;
+  animation-delay: 2.1s;
+}
+
+@keyframes dot-pulse2 {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+    opacity: 0.5;
+  }
+
+  50% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  100% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+    opacity: 0.5;
+  }
 }
 /*================================================قسم الشركاء =======================================*/
 .partners {
@@ -270,6 +447,47 @@ section h2::after {
     max-width: 90px;
   }
 }
+
+/*===================================================CTA========================================= */
+.cta {
+  text-align: center;
+  padding: 80px 20px;
+  background: #d0d1d1;
+  color: var(--light);
+  border-radius: 20px;
+  margin: 40px 9%;
+  border: #0f172a solid 3px;
+}
+.cta h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: var(--primary);
+}
+.button {
+  background: linear-gradient(140.14deg, #ec540e 15.05%, #d6361f 114.99%)
+      padding-box,
+    linear-gradient(142.51deg, #ff9465 8.65%, #af1905 88.82%) border-box;
+  border-radius: 7px;
+  border: 2px solid transparent;
+
+  text-shadow: 1px 1px 1px #00000040;
+  box-shadow: 8px 8px 20px 0px #45090059;
+
+  padding: 10px 20px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: all 0.3s;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  margin-top:35px;
+}
+
+.button:hover {
+  box-shadow: none;
+  opacity: 80%;
+}
+
 /*==========================================footer============================================ */
 .footer {
   display: grid;
