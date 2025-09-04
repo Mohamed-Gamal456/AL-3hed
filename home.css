@@ -833,12 +833,12 @@ header {
   position: relative;
 }
 .footer-bottom {
-  grid-column: 1 / -1; /*يخليها تاخد عرض الفوتر كله*/
-  /* text-align: center; */
-  margin-top: 15px;
+  text-align: center;
+  background-color: #1b1b1b;
   font-size: 14px;
   color: #d5d4d4;
-  padding: 1px 40%;
+  padding-bottom: 15px;
+  padding-top: 15px;
   border-top: 1px solid rgba(255,255,255,0.1);
 }
 .footer h1, .footer h2 {
@@ -916,9 +916,6 @@ header {
 @media (max-width: 980px) {    /*-------- لماذا تختار العاهد -------- */
   .features { grid-template-columns: repeat(2, 1fr); gap: 16px; }
   .why-choose h2 { font-size: 1.6rem; }
-  .footer-bottom {
-  padding: 1px 30%;
-} 
 }
 @media (min-width: 769px) { /*-------- شركاء النجاح -------- */
   .logos-track img {
@@ -1037,9 +1034,6 @@ header {
     justify-content: center;
   }
 }
-.footer-bottom {
-  padding: 1px 10%;
-}
 @media (max-width: 560px) {   /*-------- لماذا تختار العاهد------------*/
   .features { grid-template-columns: 1fr; }
   .trust-item { min-width: 130px; }
@@ -1058,4 +1052,5 @@ header {
   opacity: 1;
   transform: translateY(0);
 }
+
 
