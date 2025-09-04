@@ -383,11 +383,14 @@ section h2::after {
 }
 .partners h2 {
   font-size: 2rem;
-  margin-bottom: 40px;
+  margin-bottom: 10px;
   color: #0f172a;
   position: relative;
 }
-
+.partners p{
+    color: var(--text-light);
+    margin-bottom: 35px;
+}
 .partners h2::after {
   content: "";
   display: block;
@@ -619,4 +622,5 @@ section h2::after {
     justify-content: center;
   }
 }
+
 
