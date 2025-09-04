@@ -74,21 +74,22 @@ header {
 .social-icons a:hover {
     color: var(--accent-purple);
 }
-.img-main{
-    width:99%;
-    margin: 20px 0.5% 100px 0.5%;
-    /* padding: 15px 15px; */
-    display: flex;
-    justify-content: center;
-    /* background-color:rgb(214, 212, 212) */
+    .hero {
+  width: 100%;
+  max-width: 2700px;
+  margin: 0 auto;
+  padding: 10px 80px 60px 80px; /* الحواف */
 }
-.img-main img{
-    object-fit: cover;
-    width: 99%;
-    height: 85vh;
-    border-radius: 3px;
-    box-shadow: #4c363e 0px 0px 10px;
-}/*==============================================wrapper========================================= */
+
+.hero img {
+  width: 100%;
+  height: auto;
+  object-fit: cover; /* تخليها تملا البوكس */
+  border-radius: 8px; /* لو عايز حواف ناعمة */
+}
+
+
+/*==============================================wrapper========================================= */
 @keyframes animate8345 {
   0%,100% {
     filter: hue-rotate(0deg);
@@ -402,10 +403,9 @@ header {
     }
     .social-icons {
         order: 1;
-    }
-    .img-main img{
-    width: 99%;
-    height:28vh;
+    }  
+    .hero {
+    padding: 10px 20px 40px 20px; /* الحواف */
 }
     .package-details {  /*-----------package-details------------*/
         padding: 15px;
@@ -451,4 +451,5 @@ header {
   opacity: 1;
   transform: translateY(0);
 }
+
 
