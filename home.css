@@ -176,7 +176,7 @@ header {
 /*==========================================================loding=========================================*/
 .name{
   max-width: 900px;
-  margin: 40px 6%;
+  margin: 40px auto;
   padding: 15px;
   border-radius: 8px;
   border: 4px solid rgba(0,0,0,0.06);
@@ -916,6 +916,9 @@ header {
     margin: 4px ;
     box-shadow: #0b2a22 0px 0px 45px;
   }
+.name{
+  margin: 40px 6%;
+}  
   .card1 {
     margin: 7% 1.5%;
   }
@@ -1023,6 +1026,7 @@ header {
   opacity: 1;
   transform: translateY(0);
 }
+
 
 
 
