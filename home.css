@@ -40,7 +40,7 @@ body {
 }
 /* =====================================================head======================================================== */
 .hero {
-  background: url('image/بايىسالاى15.png') no-repeat center center/cover;
+  background: url('image/بايىسالاى15.webp') no-repeat center center/cover;
   border-radius: 15px;
   height: 88vh; 
   margin: 4px;
@@ -1024,6 +1024,7 @@ header {
   opacity: 1;
   transform: translateY(0);
 }
+
 
 
 
