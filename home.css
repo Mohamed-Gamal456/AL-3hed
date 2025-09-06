@@ -167,7 +167,8 @@ header {
 .nav-links a {
     color: var(--secondary);
     text-decoration: none;
-    font-size: 20px;
+    font-family: "Alexandria", sans-serif;
+    font-weight: 380;
 }
 .nav-links a:hover {
     color:var(--primary);
@@ -1052,5 +1053,6 @@ header {
   opacity: 1;
   transform: translateY(0);
 }
+
 
 
