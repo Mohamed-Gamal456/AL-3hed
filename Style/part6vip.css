@@ -1,8 +1,8 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'IBM Plex Sans Arabic', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'IBM Plex Sans Arabic', sans-serif;
 }
 :root {
   /* 🎨 أساسي */
@@ -33,61 +33,55 @@ body {
 }
 /* ===========================================head=============================================== */
 header {
-    position: relative; 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 4%;
-    background-color: var(--accent-vip);
-    color: white;
-    flex-wrap: wrap;
-    z-index: 2;
+  position: relative; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 4%;
+  background-color: var(--accent-vip);
+  color: white;
+  flex-wrap: wrap;
+  z-index: 2;
 }
 .logo img {
-    height: 35px;
+  height: 35px;
 }
 .logo:hover img{
-    transform: scale(1.1);
-    transition: transform 0.7s ease;
+  transform: scale(1.1);
+  transition: transform 0.7s ease;
 }
-/* .logo img:hover {
-  
-} */
 .nav-links {
-    display: flex;
-    gap: 20px;
+  display: flex;
+  gap: 20px;
 }
 .nav-links a {
-    color: var(--text-light);
-    text-decoration: none;
-    font-size: 18px;
+  color: var(--text-light);
+  text-decoration: none;
+  font-size: 18px;
 }
 .nav-links a:hover {
-    color: var(--accent-purple);
+  color: var(--accent-purple);
 }
 .social-icons a {
-    color: var(--text-light);
-    font-size: 18px;
-    margin-right: 15px;
+  color: var(--text-light);
+  font-size: 18px;
+  margin-right: 15px;
 }
 .social-icons a:hover {
-    color: var(--accent-purple);
+  color: var(--accent-purple);
 }
-    .hero {
+.hero {
   width: 100%;
   max-width: 2700px;
   margin: 0 auto;
   padding: 10px 80px 60px 80px; /* الحواف */
 }
-
 .hero img {
   width: 100%;
   height: auto;
   object-fit: cover; /* تخليها تملا البوكس */
   border-radius: 8px; /* لو عايز حواف ناعمة */
 }
-
-
 /*==============================================wrapper========================================= */
 @keyframes animate8345 {
   0%,100% {
@@ -121,44 +115,44 @@ header {
 }
 /* =========================================package-details======================================== */
 .package-details {
-    background: #fff;
-    border-radius: 12px;
-    padding: 20px;
-    max-width: 800px;
-    margin: 30px auto;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    text-align: center;
-    border: #090909 2px solid;
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  max-width: 800px;
+  margin: 30px auto;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: center;
+  border: #090909 2px solid;
 }
 .package-details h1 {
-    color: var(--accent-vip);
-    margin-bottom: 15px;
-    font-size: 28px;
+  color: var(--accent-vip);
+  margin-bottom: 15px;
+  font-size: 28px;
 }
 .package-details p {
-    font-size: 20px;
-    color: rgb(47, 48, 47);
-    margin-bottom: 20px;
+  font-size: 20px;
+  color: rgb(47, 48, 47);
+  margin-bottom: 20px;
 }
 .package-details ul {
-    list-style: none;
-    padding: 0;
-    text-align: right;
-    margin-bottom: 20px;
+  list-style: none;
+  padding: 0;
+  text-align: right;
+  margin-bottom: 20px;
 }
 .package-details ul li {
-    background: #f9f9f9;
-    padding: 15px 20px;
-    margin: 5px 0;
-    border-radius: 6px;
-    font-size: 20px;
-    color: #333;
+  background: #f9f9f9;
+  padding: 15px 20px;
+  margin: 5px 0;
+  border-radius: 6px;
+  font-size: 20px;
+  color: #333;
 }
 .package-details ul li::after {
-    content: "<~";
-    color: var(--accent-vip);
-    font-weight: bold;
-    margin-left: 8px;
+  content: "<~";
+  color: var(--accent-vip);
+  font-weight: bold;
+  margin-left: 8px;
 }
 /*==================================== From Uiverse.io by 00Kubi =============================*/ 
 .loader {
@@ -166,9 +160,7 @@ header {
   height: 40px;
   margin: 0px 1px 0px 1px;
   position: relative;
-
 }
-
 .loader:before {
   content: '';
   width: 48px;
@@ -286,36 +278,35 @@ header {
 }
 /* =========================================other-packages======================================== */ 
 .other-packages {
-    text-align: center;
-    margin: 150px  0px;
+  text-align: center;
+  margin: 150px  0px;
 }
 .other-packages h2 {
-    margin-bottom: 40px;
-    font-size: 24px;
-    color: #090909;
+  margin-bottom: 40px;
+  font-size: 24px;
+  color: #090909;
 }
 .package-cards {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
 }
 .package-card {
-    display: inline-block;
-    background: var(--accent-vip);
-    padding: 15px 25px;
-    border-radius: 10px;
-    color: var(--accent-purple);
-    text-decoration: none;
-    font-size:x-large;
-    transition: 0.3s;
-    border: 2px solid transparent;
-    border-color: #090909;
-
+  display: inline-block;
+  background: var(--accent-vip);
+  padding: 15px 25px;
+  border-radius: 10px;
+  color: var(--accent-purple);
+  text-decoration: none;
+  font-size:x-large;
+  transition: 0.3s;
+  border: 2px solid transparent;
+  border-color: #090909;
 }
 .package-card:hover {
-    background: var(--accent-purple);
-    color: var(--text-dark);
+  background: var(--accent-purple);
+  color: var(--text-dark);
 }
 /*==========================================footer============================================ */
 .footer {
@@ -381,52 +372,52 @@ header {
   color: #ffcc00;
 }
 @media (max-width: 768px) {
-    header { /*--------------head----------------------*/
-        flex-direction: row;
-        justify-content: space-between;
-        padding: 5px 3%;
-    }
-    .nav-links {
-        order: 3;
-        width: 100%;
-        justify-content: center;
-        margin-top: 5px;
-        flex-wrap: wrap;
-    }
-    .logo {
-        order: 2;
-    }
-    .logo img{
-        height: 25px;
-    }
-    .social-icons a {
-      font-size: 14px;
-      margin-right: 8px;
-    }
-    .social-icons {
-        order: 1;
-    } 
-    .hero {
+  header { /*--------------head----------------------*/
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5px 3%;
+  }
+  .nav-links {
+    order: 3;
+    width: 100%;
+    justify-content: center;
+    margin-top: 5px;
+     flex-wrap: wrap;
+  }
+  .logo {
+    order: 2;
+  }
+  .logo img{
+    height: 25px;
+  }
+  .social-icons a {
+    font-size: 14px;
+    margin-right: 8px;
+  }
+  .social-icons {
+    order: 1;
+  } 
+  .hero {
     padding: 10px 20px 40px 20px; /* الحواف */
-}
-    .package-details {  /*-----------package-details------------*/
-        padding: 15px;
-        margin: 30px 1%;
-
-    }
-    .package-details h1 {
-        font-size: 24px;
-    }
-    .package-details ul li {
-        font-size: 19px;
-        padding: 12px 15px;
-    }
-    .other-packages {   /*-----------other-Packages------------*/
-        margin: 60px 0px 80px  0px;
-    }
-    .package-card {
-        font-size:larger;
-    }.footer {
+  }
+  .package-details {  /*-----------package-details------------*/
+    padding: 15px;
+    margin: 30px 1%;
+  }
+  .package-details h1 {
+    font-size: 24px;
+  }
+  .package-details ul li {
+    font-size: 19px;
+    padding: 12px 15px;
+  }
+  .other-packages {   /*-----------other-Packages------------*/
+    margin: 60px 0px 80px  0px;
+  }
+  .package-card {
+    font-size:larger;
+  }
+  .footer {
     grid-template-columns: 1fr;   /* يخليهم تحت بعض */
     text-align: center;           /* توسيط النصوص */
   }
@@ -453,5 +444,4 @@ header {
   opacity: 1;
   transform: translateY(0);
 }
-
 
