@@ -40,7 +40,7 @@ body {
 }
 /* =====================================================head======================================================== */
 .hero {
-  background: url('image/بايىسالاى15.webp') no-repeat center center/cover;
+  background: url('image/background.webp') no-repeat center center/cover;
   border-radius: 15px;
   height: 88vh; 
   margin: 4px;
@@ -52,8 +52,8 @@ body {
 }
 .hero-content {
   position: absolute;
-  top: 58%;
-  left: 48%;
+  top: 55%;
+  left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
   color: var(--text-light);
@@ -914,22 +914,21 @@ header {
     margin: 4px ;
     box-shadow: #0b2a22 0px 0px 45px;
   }
-.name{
+  .name{
   margin: 40px 6%;
-}  
+}
   .card1 {
-    margin: 7% 1.5%;
+    margin: 15% 1.5%;
   }
   .card1 h1 {
     font-size: 1.3rem;
     margin: 10px 0px 20px 0px;
   }
   .hero-content {
-    top: 65%;
-    left: 48%;
+    top: 58%;
   }
   .hero-content h1 {
-    font-size: 1.3rem;
+    font-size: 1rem;
     margin: 10px 0px 20px 0px ; 
   }
   .cta-btn {
@@ -1024,9 +1023,5 @@ header {
   opacity: 1;
   transform: translateY(0);
 }
-
-
-
-
 
 
