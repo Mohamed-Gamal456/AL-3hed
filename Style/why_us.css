@@ -450,7 +450,7 @@ section h2::after {
 .cta {
   text-align: center;
   padding: 80px 20px;
-  background: #d0d1d1;
+  background: #61d3f3;
   color: var(--light);
   border-radius: 20px;
   margin: 40px 9%;
@@ -459,7 +459,7 @@ section h2::after {
 .cta h2 {
   font-size: 2rem;
   margin-bottom: 20px;
-  color: var(--primary);
+  color: var(--text-dark);
 }
 .button {
   background: linear-gradient(140.14deg, #ec540e 15.05%, #d6361f 114.99%)
@@ -613,4 +613,5 @@ section h2::after {
     justify-content: center;
   }
 }
+
 
