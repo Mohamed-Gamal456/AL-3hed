@@ -1,4 +1,31 @@
+/* :root {
+  /* 🎨 أساسي *
+  --primary: #F59E0B;      /* تركواز *
+  --secondary: #9333EA;    /* تركواز أغمق *
 
+  /* 🎯 ألوان مساعدة *
+  --accent-gold: #06B6D9;  /* ذهبي *
+  --accent-purple: #0E7490;/* بنفسجي *
+
+  /* 🌐 خلفيات *
+  --background-light: #F9FAFB;
+  --background-dark: #0F172A;
+
+  /* ✍ النصوص *
+  --text-dark: #1E293B;
+  --text-light: #FFFFFF;
+
+  /* 🌈 تدرجات *
+  --gradient-blue: linear-gradient(150deg, , #2874de);
+  --gradient-purple: linear-gradient(150deg, #06B6D9, #9e4aec);
+  --gradient-dark: linear-gradient(150deg, #06B6D9, #1E3A8A);
+} */
+/* =====================================================Fonts========================================================== */
+    /* font-family: 'Cairo', Arial, sans-serif; */
+    /* font-family: 'Noto Sans Arabic', sans-serif; */
+    /* font-family: 'IBM Plex Sans Arabic', sans-serif;  عرض و كويس*/
+    /* font-family: 'Baloo Bhaijaan 2', cursive;  عريض و منفوخ*/
+    /* font-family: 'Reem Kufi Fun', sans-serif;     فيه اشكال*/ 
 /* ==================== Reset & Global ==================== */
 * {
   margin: 0;
@@ -677,5 +704,6 @@ header {
   opacity: 1;
   transform: translateY(0);
 }
+
 
 
