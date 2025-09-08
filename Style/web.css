@@ -458,9 +458,6 @@ button:active {
     margin-top: 5px;
     flex-wrap: wrap;
   }
-  section {
-  padding: 30px 15px;
-  }
   .logo { 
     order: 2;
   }
@@ -518,5 +515,6 @@ button:active {
     justify-content: center;
   }
 }
+
 
 
