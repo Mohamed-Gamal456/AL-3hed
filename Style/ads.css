@@ -152,7 +152,7 @@ header {
 /* ====================================== Hero Section ============================================== */
 .hero {
   text-align: center;
-  padding: 70px 20px;
+  padding: 35px 20px;
   background: var(--text-light) ;
   border-radius: 10px;
   margin: 5% 9% ;
@@ -351,7 +351,7 @@ header {
   text-align: center;
   background: rgba(223, 220, 220, 0.5);
   color: var(--text-dark);
-  padding: 70px 20px;
+  padding: 35px 20px;
   border-radius: 12px;
   margin: 60px 9%;
   border: #0F172A 3px solid;
@@ -644,4 +644,5 @@ header {
   opacity: 1;
   transform: translateY(0);
 }
+
 
