@@ -124,7 +124,7 @@ header {
   letter-spacing: 0.5em;
   text-shadow: 2px 2px 3px #919191;
 }
-.i {
+.A {
   font-size: x-large;
   color: black;
   opacity: 0;
@@ -133,7 +133,7 @@ header {
   letter-spacing: 0.5em;
   text-shadow: 2px 2px 3px #919191;
 }
-.n {
+.i {
   font-size: x-large;
   color: black;
   opacity: 0;
@@ -142,7 +142,7 @@ header {
   letter-spacing: 0.5em;
   text-shadow: 2px 2px 3px #919191;
 }
-.g {
+.n {
   font-size: x-large;
   color: black;
   opacity: 0;
@@ -151,12 +151,21 @@ header {
   letter-spacing: 0.5em;
   text-shadow: 2px 2px 3px #919191;
 }
+.g {
+  font-size: x-large;
+  color: black;
+  opacity: 0;
+  animation: pass 2s ease-in-out infinite;
+  animation-delay: 1.6s;
+  letter-spacing: 0.5em;
+  text-shadow: 2px 2px 3px #919191;
+}
 .d1 {
   font-size: x-large;
   color: black;
   opacity: 0;
   animation: pass1 2s ease-in-out infinite;
-  animation-delay: 1.6s;
+  animation-delay: 1.8s;
   letter-spacing: 0.5em;
   text-shadow: 2px 2px 3px #919191;
 }
@@ -165,7 +174,7 @@ header {
   color: black;
   opacity: 0;
   animation: pass1 2s ease-in-out infinite;
-  animation-delay: 2s;
+  animation-delay: 2.2s;
   letter-spacing: 0.5em;
   text-shadow: 2px 2px 3px #919191;
 }
@@ -197,7 +206,7 @@ header {
     opacity: 1;
   }
 }
-/*---------------------------title------------------------ */
+/*---------------------------title----------------------- */
 .title {
   text-align: center;
   padding: 60px 20px;
@@ -449,7 +458,7 @@ section h2::after {
 /*===================================================CTA========================================= */
 .cta {
   text-align: center;
-  padding: 40px 20px;
+  padding: 80px 20px;
   background: #61d3f3;
   color: var(--light);
   border-radius: 20px;
@@ -595,9 +604,6 @@ section h2::after {
   section h2 {/*-----------------section h2-------------------*/
     font-size: 1.6rem;
   }
-  .cta {
-  margin: 40px 4%;
-}
   .cta h2 {/*--------------------cta h2----------------------*/
     font-size: 1.5rem;
   }
@@ -616,6 +622,4 @@ section h2::after {
     justify-content: center;
   }
 }
-
-
 
