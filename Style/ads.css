@@ -579,6 +579,7 @@ header {
   }
   .hero { /*--------------hero----------------------*/
     margin: 30px 1%;
+    padding: 35px 20px;
   }
   .hero h1 {
     font-size: 1.5rem;
@@ -635,5 +636,6 @@ header {
   opacity: 1;
   transform: translateY(0);
 }
+
 
 
