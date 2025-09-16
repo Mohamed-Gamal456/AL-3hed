@@ -1,31 +1,3 @@
-/* :root {
-  /* 🎨 أساسي *
-  --primary: #F59E0B;      /* تركواز *
-  --secondary: #9333EA;    /* تركواز أغمق *
-
-  /* 🎯 ألوان مساعدة *
-  --accent-gold: #06B6D9;  /* ذهبي *
-  --accent-purple: #0E7490;/* بنفسجي *
-
-  /* 🌐 خلفيات *
-  --background-light: #F9FAFB;
-  --background-dark: #0F172A;
-
-  /* ✍ النصوص *
-  --text-dark: #1E293B;
-  --text-light: #FFFFFF;
-
-  /* 🌈 تدرجات *
-  --gradient-blue: linear-gradient(150deg, , #2874de);
-  --gradient-purple: linear-gradient(150deg, #06B6D9, #9e4aec);
-  --gradient-dark: linear-gradient(150deg, #06B6D9, #1E3A8A);
-} */
-/* =====================================================Fonts========================================================== */
-    /* font-family: 'Cairo', Arial, sans-serif; */
-    /* font-family: 'Noto Sans Arabic', sans-serif; */
-    /* font-family: 'IBM Plex Sans Arabic', sans-serif;  عرض و كويس*/
-    /* font-family: 'Baloo Bhaijaan 2', cursive;  عريض و منفوخ*/
-    /* font-family: 'Reem Kufi Fun', sans-serif;     فيه اشكال*/ 
 * {
   margin: 0;
   padding: 0;
@@ -197,7 +169,7 @@ header {
   background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
 }
 .card__content {
-  background: var(--background-light);
+  background: linear-gradient(to bottom, #02cef7f6, #b0ecf4)
   border-radius: 17px;
   padding:40px 15px;
   width: 100%;
@@ -267,7 +239,7 @@ header {
 /* ======================================== CTA ================================================== */
 .cta-final {
   text-align: center;
-  background: rgba(223, 220, 220, 0.5);
+  background: linear-gradient(to bottom, #02cef7f6, #b0ecf4);
   color: var(--text-dark);
   padding: 30px 15px;
   border-radius: 20px;
@@ -546,6 +518,7 @@ button:active {
     justify-content: center;
   }
 }
+
 
 
 
