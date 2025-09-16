@@ -1,31 +1,3 @@
-/* :root {
-  /* 🎨 أساسي *
-  --primary: #F59E0B;      /* تركواز *
-  --secondary: #9333EA;    /* تركواز أغمق *
-
-  /* 🎯 ألوان مساعدة *
-  --accent-gold: #06B6D9;  /* ذهبي *
-  --accent-purple: #0E7490;/* بنفسجي *
-
-  /* 🌐 خلفيات *
-  --background-light: #F9FAFB;
-  --background-dark: #0F172A;
-
-  /* ✍ النصوص *
-  --text-dark: #1E293B;
-  --text-light: #FFFFFF;
-
-  /* 🌈 تدرجات *
-  --gradient-blue: linear-gradient(150deg, , #2874de);
-  --gradient-purple: linear-gradient(150deg, #06B6D9, #9e4aec);
-  --gradient-dark: linear-gradient(150deg, #06B6D9, #1E3A8A);
-} */
-/* =====================================================Fonts========================================================== */
-    /* font-family: 'Cairo', Arial, sans-serif; */
-    /* font-family: 'Noto Sans Arabic', sans-serif; */
-    /* font-family: 'IBM Plex Sans Arabic', sans-serif;  عرض و كويس*/
-    /* font-family: 'Baloo Bhaijaan 2', cursive;  عريض و منفوخ*/
-    /* font-family: 'Reem Kufi Fun', sans-serif;     فيه اشكال*/ 
 *{
   margin: 0;
   padding: 0;
@@ -55,11 +27,11 @@
   --gradient-dark: linear-gradient(150deg, #06B6D9, #1E3A8A);
 }
 body {
-  background: linear-gradient(160deg, #e2f5f8, #e1f5f8, #f8f9fa );
+  background: linear-gradient(160deg, #ddf8fd, #dbf2f6, #f8f9fa );
   min-height: 100vh;
   margin: 0;
 }
-/* ===========================================head=============================================== */
+/* =========================================head=============================================== */
 header {
   position: relative; 
   display: flex;
@@ -192,24 +164,24 @@ header {
   max-width: 1100px;
   padding: 5px;
   box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
-  background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+  background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#037780);
 }
 .card__content {
-  background: var(--background-light);
+  background: linear-gradient(to bottom, #02cef7f6, #b0ecf4);
   border-radius: 17px;
-  padding:35px 20px;
+  padding:80px;
   width: 100%;
   height: 100%;
 }    
-.about h1 {
+.about h2 {
   font-size: 2rem;
   margin-bottom: 15px;
-  color:var(--secondary);
+  color:var(--text-dark);
 }
 .about p {
   font-size: 1.2rem;
   margin-bottom: 45px;
-  color: var(--text-dark)
+  color: rgb(89, 89, 89);
 }section {
   padding: 60px 20px;
   text-align: center;
@@ -282,7 +254,7 @@ button:active {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
   border-radius: 10px;
-  background: var(--text-light);
+  background: linear-gradient(to bottom, #06B6D9, #e0f7fa);
   margin: 60px 5%;
   padding: 40px;
 }
@@ -306,7 +278,7 @@ button:active {
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 20px;
   margin: 40px 5%;
-  background: var(--text-light);
+  background: linear-gradient(to bottom, #067a91, #e0f7fa);
   border-radius: 10px;
   padding: 40px;
 }
@@ -333,7 +305,7 @@ button:active {
 }
 /* =============================================== Why Us Section ======================================= */
 .why-us {
-  background: #f8f9fa;
+  background: linear-gradient(to bottom, #06B6D9, #e0f7fa);
   border-radius: 15px;
   max-width: 900px;
   margin:5% auto;
@@ -354,7 +326,7 @@ button:active {
 }
 /* ====================================== Final CTA Section ===================================== */
 .cta-final {
-  background: rgba(223, 220, 220, 0.5);
+  background: linear-gradient(to bottom, #02cef7f6, #b0ecf4);
   padding: 70px 20px;
   border-radius: 15px;
   margin: 8% ;
@@ -363,7 +335,7 @@ button:active {
 .cta-final h1 {
   font-size: 32px;
   margin-bottom: 15px;
-  color: var(--secondary);
+  color: var(--text-dark);
 }
 .cta-final p {
   font-size: 20px;
@@ -547,6 +519,9 @@ button:active {
   .about {
     margin: 5% 1% ;
   }
+  .card__content {
+  padding:35px 5px;
+  }
   .package-details {  /*-----------package-details------------*/
     padding: 15px;
   }
@@ -593,5 +568,3 @@ button:active {
   opacity: 1;
   transform: translateY(0);
 }
-
-
