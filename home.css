@@ -647,11 +647,7 @@ header {
 .logos-track img {
   height: 100px;
   margin: 0 40px;
-  filter: grayscale(100%);
   transition: filter 0.3s ease;
-}
-.logos-track img:hover {
-  filter: grayscale(0%);
 }
 /* أنيميشن التحرك لليمين */
 @keyframes scrollRight {
@@ -938,4 +934,5 @@ header {
   opacity: 1;
   transform: translateY(0);
 }
+
 
