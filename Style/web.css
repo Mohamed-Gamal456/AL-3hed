@@ -183,7 +183,7 @@ header {
 .about p {
   font-size: 1.2rem;
   margin-bottom: 45px;
-  color: var(--text-dark)
+  color: var(--text-dark);
 }section {
   padding: 60px 20px;
   text-align: center;
@@ -518,6 +518,7 @@ button:active {
     justify-content: center;
   }
 }
+
 
 
 
