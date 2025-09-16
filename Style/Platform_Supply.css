@@ -278,7 +278,6 @@ button:active {
 }
 .services-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 20px;
   margin: 40px 5%;
   background: linear-gradient(to bottom, #067a91, #e0f7fa);
@@ -571,4 +570,5 @@ button:active {
   opacity: 1;
   transform: translateY(0);
 }
+
 
