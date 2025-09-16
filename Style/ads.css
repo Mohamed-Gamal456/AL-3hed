@@ -161,7 +161,7 @@ header {
 .hero h1 {
   font-size: 2rem;
   margin-bottom: 15px;
-  color: var(--secondary);
+  color: var(--text-light);
 }
 .hero p {
   font-size: 1.2rem;
@@ -347,7 +347,7 @@ header {
 .cta-final h1 {
   font-size: 2rem;
   margin-bottom: 15px;
-  color: var(--secondary);
+  color: var(--text-light);
 }
 .cta-final p {
   font-size: 1.2rem;
@@ -635,4 +635,5 @@ header {
   opacity: 1;
   transform: translateY(0);
 }
+
 
