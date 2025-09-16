@@ -242,10 +242,13 @@ header {
 }
 /* =============================================== Why Us Section ======================================= */
 .why-us {
-  background: #f8f9fa;
+  background: linear-gradient(to bottom, var(--primary), #e0f7fa);
   border-radius: 15px;
   max-width: 900px;
   margin:5% auto;
+}
+.why-us h2{
+  color:#0F172A;
 }
 .why-us ul {
   list-style: none;
@@ -543,6 +546,7 @@ button:active {
     justify-content: center;
   }
 }
+
 
 
 
