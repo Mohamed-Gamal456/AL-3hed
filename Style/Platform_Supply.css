@@ -273,6 +273,9 @@ button:active {
   transform: translateY(-10px);
 }
 /* ======================================= Services Section ========================================== */
+.services{
+  background: linear-gradient(to bottom, #067a91, #e0f7fa);  
+}
 .services-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -568,3 +571,4 @@ button:active {
   opacity: 1;
   transform: translateY(0);
 }
+
