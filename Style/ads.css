@@ -153,10 +153,10 @@ header {
 .hero {
   text-align: center;
   padding: 70px 20px;
-  background: var(--text-light) ;
+  background: linear-gradient(to bottom, #02cef7f6, #b0ecf4) ;
   border-radius: 10px;
   margin: 5% 9% ;
-  border:  #40c9ff  solid 2.5px;
+  border:  #000000  solid 2.5px;
 }
 .hero h1 {
   font-size: 2rem;
@@ -337,7 +337,7 @@ header {
 /* =========================================== CTA Final Section ================================================== */
 .cta-final {
   text-align: center;
-  background: rgba(223, 220, 220, 0.5);
+  background: linear-gradient(to bottom, #02cef7f6, #b0ecf4);
   color: var(--text-dark);
   padding: 70px 20px;
   border-radius: 12px;
