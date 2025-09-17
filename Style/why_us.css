@@ -504,6 +504,9 @@ section h2::after {
 .testimonials-grid {
   gap: 5px;
 }
+  .testimonial-card {
+  padding: 20px 10px;
+}
 .about-testimonials h2 {
   font-size: 20px;
 }
@@ -675,6 +678,7 @@ section h2::after {
     justify-content: center;
   }
 }
+
 
 
 
