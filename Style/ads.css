@@ -259,7 +259,7 @@ header {
 }
 /* ================================ Testimonials Section =================================== */
 .testimonials {
-  background: var(--text-light);
+  background: linear-gradient(to bottom, #06B6D9, #e0f7fa);
   padding: 60px 20px;
   border-radius: 12px;
   margin: 120px 0;
@@ -636,6 +636,7 @@ header {
   opacity: 1;
   transform: translateY(0);
 }
+
 
 
 
