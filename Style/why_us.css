@@ -443,7 +443,7 @@ section h2::after {
 /*==========================================POV===========================*/
 .about-testimonials {
   padding: 50px 5%;
-  background: linear-gradient(to bottom, #13d0f5f6, #b0ecf4);
+  background: linear-gradient(to bottom, #13d0f5f6, #e0f4f7);
   text-align: center;
 }
 
@@ -678,6 +678,7 @@ section h2::after {
     justify-content: center;
   }
 }
+
 
 
 
