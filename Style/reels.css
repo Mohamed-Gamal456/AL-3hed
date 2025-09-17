@@ -568,6 +568,12 @@ button:active {
   .card__content h1 {
     font-size: 1.5rem;
   }
+    .testimonials {
+  margin: 40px 1%; 
+}
+.testimonials-grid {
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
   .package-details {  /*-----------package-details------------*/
     padding: 15px;
   }
@@ -599,4 +605,5 @@ button:active {
     justify-content: center;
   }
 }
+
 
