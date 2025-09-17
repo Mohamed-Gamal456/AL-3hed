@@ -372,6 +372,45 @@ header {
   color: #666;
   line-height: 1.6;
 }
+/* ================================ Testimonials Section =================================== */
+.testimonials {
+  margin: 40px 8%;
+  padding: 60px 8%;
+  background: linear-gradient(to bottom, #06B6D9, #d3f3f8);
+  text-align: center;
+  border-radius: 8px;
+}
+.testimonials h2 {
+  font-size: 28px;
+  margin-bottom: 40px;
+  color: var(--text-light);
+}
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 25px;
+}
+.testimonial-card {
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.testimonial-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+}
+.testimonial-card h3 {
+  font-size: 18px;
+  margin-bottom: 12px;
+  color: #c2185b;
+}
+.testimonial-card p {
+  font-size: 15px;
+  color: #383838;
+  line-height: 1.6;
+}
 /* ==================== CTA Final Section ==================== */
 .cta-final {
   background:linear-gradient(to bottom, #02cef7f6, #b0ecf4);
@@ -566,6 +605,13 @@ header {
   .card__content {
   padding:35px 10px;
 } 
+.testimonials{
+  margin: 30px 1%;
+}
+.testimonials-grid {
+  /* display: grid */
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
   .free-services {
     margin: 100px 1%;
     padding: 80px 10px;
@@ -637,3 +683,4 @@ header {
   opacity: 1;
   transform: translateY(0);
 }
+
